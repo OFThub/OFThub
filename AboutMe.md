@@ -15,9 +15,6 @@ Learning is an endless ocean;<br>we are engineers navigating with devotion.<br>E
 ## 🏆 GitHub Trophies
 ![](https://github-profile-trophy.vercel.app/?username=OFThub&theme=shadow_red&no-frame=false&no-bg=false&margin-w=4)
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=OFThub&limit=5&theme=shadow_red&combine_all_yearly_contributions=true)
-
 ---
 [![](https://visitcount.itsvg.in/api?id=OFThub&icon=0&color=4)](https://visitcount.itsvg.in)
 
