@@ -1,38 +1,33 @@
+<!-- ═══════════════════════ HERO ═══════════════════════ -->
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0000,100:FF0000&height=260&section=header&text=%20Ömer%20Faruk&fontSize=48&fontColor=000000&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20&descAlignY=58&descSize=20" width="100%"/>
+<img src="assets/hero.svg" width="100%" alt="Ömer Faruk Türkdoğdu — Full-Stack Developer"/>
+
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=700&color=FF2E63&center=true&vCenter=true&width=900&height=64&lines=Full-Stack+Developer+%7C+Istanbul%2C+TR;React+%C2%B7+Next.js+%C2%B7+Node.js+%C2%B7+.NET;Flutter+ile+mobil%2C+Python+ile+yapay+zeka;Temiz+kod%2C+%C3%B6l%C3%A7eklenebilir+mimari;Her+commit+bir+y%C3%B6n%2C+her+bug+bir+fikir" alt="Roller"/>
+
+<a href="https://linkedin.com/in/omerfarukoft"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:oturkdogdu1@gmail.com"><img src="https://img.shields.io/badge/Email-FF2E63?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta"/></a>
+<a href="https://instagram.com/omerfaruk.oft"><img src="https://img.shields.io/badge/Instagram-6C5CE7?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://github.com/OFThub?tab=repositories"><img src="https://img.shields.io/badge/30%2B%20Repo-00E5FF?style=for-the-badge&logo=github&logoColor=0D1117" alt="Repolar"/></a>
+
+<img src="https://komarev.com/ghpvc/?username=OFThub&label=PROFILE+VIEWS&color=FF2E63&style=for-the-badge" alt="Görüntülenme"/>
+<img src="https://img.shields.io/badge/OPEN%20TO%20WORK-3DDC97?style=for-the-badge&logoColor=0D1117" alt="İşe açık"/>
+
+</div>
+
+<!-- ═══════════════════════ TERMİNAL ═══════════════════════ -->
+<div align="center">
+
+<img src="assets/terminal.svg" width="94%" alt="whoami terminali"/>
+
+</div>
 
 <br/>
 
-</div>
+<!-- ═══════════════════════ HAKKIMDA ═══════════════════════ -->
+## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="28"/> Hakkımda
 
-<br/>
-
-<div align="center">
-
-<img src="assets/ascii-portrait.gif" width="320" alt="ASCII portre animasyonu"/>
-
-</div>
-
-```
- ██████╗ ███╗   ███╗███████╗██████╗
-██╔═══██╗████╗ ████║██╔════╝██╔══██╗
-██║   ██║██╔████╔██║█████╗  ██████╔╝
-██║   ██║██║╚██╔╝██║██╔══╝  ██╔══██╗
-╚██████╔╝██║ ╚═╝ ██║███████╗██║  ██║
- ╚═════╝ ╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝
-
-███████╗ █████╗ ██████╗ ██╗   ██╗██╗  ██╗
-██╔════╝██╔══██╗██╔══██╗██║   ██║██║ ██╔╝
-█████╗  ███████║██████╔╝██║   ██║█████╔╝
-██╔══╝  ██╔══██║██╔══██╗██║   ██║██╔═██╗
-██║     ██║  ██║██║  ██║╚██████╔╝██║  ██╗
-╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝
-```
-
-</div>
-
-## 💫 Hakkımda
+<img align="right" width="270" src="assets/ascii-portrait.gif" alt="ASCII portre animasyonu"/>
 
 ```txt
 Öğrenmek sonu olmayan bir okyanus;
@@ -41,29 +36,28 @@ Her commit bir yön, her bug bir fikir —
 kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 ```
 
-- 🔭 Şu an **[üzerinde çalıştığın proje adını buraya yaz]** üzerinde çalışıyorum
-- 🌱 Şu an **[öğrendiğin yeni teknolojiyi buraya yaz]** öğreniyorum
-- 👯 **[iş birliği yapmak istediğin alan]** konusunda iş birliğine açığım
-- 💬 Bana **[uzman olduğun konular]** hakkında soru sorabilirsin
+- 🔭 Şu an **MangaStudio-Pro** (AI destekli çizim/manga üretim aracı) ve **PlannerAgent** (LLM tabanlı planlama ajanı) üzerinde çalışıyorum
+- 🌱 **LLM ajanları, system design ve clean architecture** öğreniyorum
+- 🧩 30+ public repo: web, mobil, yapay zekâ, CBS ve sistem programlama
+- 👯 **Yapay zekâ ürünleri, full-stack SaaS ve açık kaynak** projelerde iş birliğine açığım
+- 💬 Bana **React/Next.js, Node.js, .NET, Flutter, Python ve AI entegrasyonları** hakkında soru sorabilirsin
 - ⚡ Eğlenceli gerçek: kod yazarken kahve tüketimim gözle görülür şekilde artar ☕
-
-<img align="right" width="260" src="https://user-images.githubusercontent.com/74038190/221352989-518609ab-b4d1-459e-929f-a08cd2bd9b3c.gif">
-
-## 🌐 Socials
-
-<div align="center">
-
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?style=for-the-badge&logo=Instagram&logoColor=white)](https://instagram.com/omerfaruk.oft)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/omerfarukoft)
-[![Gmail](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:oturkdogdu1@gmail.com)
-
-</div>
 
 <br clear="right"/>
 
 ---
 
-## 💻 Tech Stack
+<!-- ═══════════════════════ YETENEKLER ═══════════════════════ -->
+## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"/> Yetenek Matrisi
+
+<div align="center">
+
+<img src="assets/skills.svg" width="94%" alt="Animasyonlu yetenek matrisi"/>
+
+</div>
+
+<details open>
+<summary><b>🧰 Tüm Teknoloji Yığını</b> — <i>daraltmak için tıkla</i></summary>
 
 <div align="center">
 
@@ -97,56 +91,106 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 </div>
 
+</details>
+
 <div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/219923809-b86dc415-a0c2-4a38-bc88-ad6cf06395a8.gif" width="450">
+<img src="https://user-images.githubusercontent.com/74038190/212284100-561aa473-3905-4a80-b561-0d28506553ee.gif" width="100%"/>
 </div>
 
 ---
 
-## 📊 GitHub Stats
+<!-- ═══════════════════════ PROJELER ═══════════════════════ -->
+## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28"/> Öne Çıkan Projeler
 
 <div align="center">
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&theme=react-dark&hide_border=true&area=true" width="100%"/>
+<a href="https://github.com/OFThub/MangaStudio-Pro"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=MangaStudio-Pro&bg_color=0D1117&title_color=FF2E63&icon_color=FF9F1C&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="MangaStudio-Pro"/></a>
+<a href="https://github.com/OFThub/PlannerAgent"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=PlannerAgent&bg_color=0D1117&title_color=FF2E63&icon_color=FF9F1C&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="PlannerAgent"/></a>
 
-<img src="https://user-images.githubusercontent.com/74038190/221352987-68da234d-4d62-4e9d-9d7f-098dc657c2dc.gif" width="100%">
+<a href="https://github.com/OFThub/ArnavutkoyCBS"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=ArnavutkoyCBS&bg_color=0D1117&title_color=00E5FF&icon_color=6C5CE7&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="ArnavutkoyCBS"/></a>
+<a href="https://github.com/OFThub/StockPredictions"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=StockPredictions&bg_color=0D1117&title_color=00E5FF&icon_color=6C5CE7&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="StockPredictions"/></a>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=OFThub&theme=onedark" width="100%">
+<a href="https://github.com/OFThub/AIContentPlatform"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=AIContentPlatform&bg_color=0D1117&title_color=FF9F1C&icon_color=FF2E63&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="AIContentPlatform"/></a>
+<a href="https://github.com/OFThub/Sportify"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=Sportify&bg_color=0D1117&title_color=FF9F1C&icon_color=FF2E63&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="Sportify"/></a>
 
 </div>
 
-## 🏆 GitHub Trophies
+<details>
+<summary><b>📚 Tüm Projeler (30+)</b> — <i>kategorilere göre</i></summary>
+
+<br/>
+
+**🤖 Yapay Zekâ & Veri**
+[MangaStudio-Pro](https://github.com/OFThub/MangaStudio-Pro) · [MangaStudio](https://github.com/OFThub/MangaStudio) · [Manga-Pose-Transfer](https://github.com/OFThub/Manga-Pose-Transfer) · [PlannerAgent](https://github.com/OFThub/PlannerAgent) · [OftAi](https://github.com/OFThub/OftAi) · [AIContentPlatform](https://github.com/OFThub/AIContentPlatform) · [AIDocumentSimplifier](https://github.com/OFThub/AIDocumentSimplifier) · [StockPredictions](https://github.com/OFThub/StockPredictions) · [AI-Applications](https://github.com/OFThub/AI-Applications) · [AI](https://github.com/OFThub/AI) · [SEYREK](https://github.com/OFThub/SEYREK)
+
+**🌐 Web & Full-Stack**
+[Portfolio](https://github.com/OFThub/Portfolio) · [PersonalWebsite](https://github.com/OFThub/PersonalWebsite) · [EventFlowCommerce](https://github.com/OFThub/EventFlowCommerce) · [OnlineLibrary](https://github.com/OFThub/OnlineLibrary) · [OFTify](https://github.com/OFThub/OFTify) · [FilmList](https://github.com/OFThub/FilmList) · [DropSystem](https://github.com/OFThub/DropSystem) · [Sportify](https://github.com/OFThub/Sportify) · [HollidayPlanner](https://github.com/OFThub/HollidayPlanner) · [ToDoList](https://github.com/OFThub/ToDoList)
+
+**🧮 Sistem, Algoritma & CBS**
+[ArnavutkoyCBS](https://github.com/OFThub/ArnavutkoyCBS) · [AkBilSis](https://github.com/OFThub/AkBilSis) · [ComSim](https://github.com/OFThub/ComSim) · [Tarsau](https://github.com/OFThub/Tarsau) · [SisProg](https://github.com/OFThub/SisProg) · [ArrayvsLinkedList](https://github.com/OFThub/ArrayvsLinkedList) · [Sudoku](https://github.com/OFThub/Sudoku) · [DetectiveGame](https://github.com/OFThub/DetectiveGame)
+
+</details>
+
+---
+
+<!-- ═══════════════════════ İSTATİSTİKLER ═══════════════════════ -->
+## <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="28"/> GitHub İstatistikleri
 
 <div align="center">
 
-<img src="https://github-trophies.vercel.app/?username=OFThub&theme=onedark" width="100%"/>
+<img src="https://github-readme-stats.vercel.app/api?username=OFThub&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=FF2E63&icon_color=FF9F1C&text_color=C9D1D9&ring_color=6C5CE7" width="49%" alt="GitHub istatistikleri"/>
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OFThub&layout=compact&langs_count=10&hide_border=true&bg_color=0D1117&title_color=FF2E63&text_color=C9D1D9" width="41%" alt="En çok kullanılan diller"/>
+
+<img src="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=0D1117&stroke=1F2B44&ring=FF2E63&fire=FF9F1C&currStreakLabel=00E5FF&sideLabels=C9D1D9&dates=6E7F9E&currStreakNum=FFFFFF&sideNums=FFFFFF" width="91%" alt="Commit serisi"/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&bg_color=0D1117&color=E6EDF7&line=FF2E63&point=00E5FF&area=true&area_color=6C5CE7&hide_border=true&custom_title=Katki%20Grafigi" width="91%" alt="Katkı grafiği"/>
+
+</div>
+
+### 🏆 Kupalar
+
+<div align="center">
+
+<img src="https://github-profile-trophy.vercel.app/?username=OFThub&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" width="97%" alt="GitHub kupaları"/>
 
 </div>
 
 ---
 
-## 🐍 Commit Geçmişi
+<!-- ═══════════════════════ YILAN ═══════════════════════ -->
+## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="28"/> Commit Geçmişi
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg" />
-  <img alt="commit geçmişimi yiyen yılan animasyonu" src="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg" width="100%"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg"/>
+  <img alt="Commit geçmişimi yiyen yılan animasyonu" src="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg" width="100%"/>
 </picture>
 
 </div>
 
 ---
 
+<!-- ═══════════════════════ İLETİŞİM ═══════════════════════ -->
+## <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="28"/> Birlikte Çalışalım
+
 <div align="center">
-<img src="https://user-images.githubusercontent.com/74038190/212751818-13da6fd2-27ca-45c4-9c64-3940ccfa6fd3.gif" width="500">
+
+<img src="https://user-images.githubusercontent.com/74038190/212750147-854a394f-fee9-4080-9770-78a4b7ece53f.gif" width="420"/>
+
+**Yeni bir ürün mü kuruyorsunuz? Ekibinize full-stack bir geliştirici mi arıyorsunuz?**
+
+Kapı her zaman açık — bir mesaj yeterli.
+
+<a href="https://linkedin.com/in/omerfarukoft"><img src="https://img.shields.io/badge/LinkedIn'de%20ba%C4%9Flan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+<a href="mailto:oturkdogdu1@gmail.com"><img src="https://img.shields.io/badge/E--posta%20g%C3%B6nder-FF2E63?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta"/></a>
+<a href="https://github.com/OFThub?tab=repositories"><img src="https://img.shields.io/badge/Projelerimi%20incele-6C5CE7?style=for-the-badge&logo=github&logoColor=white" alt="Projeler"/></a>
+
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0000,100:FF0000cb&height=150&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2E63,50:6C5CE7,100:00E5FF&height=170&section=footer&text=Thanks%20for%20scrolling!&fontSize=26&fontColor=ffffff&fontAlignY=72&animation=twinkling" width="100%"/>
 
 <div align="center">
-
-[![](https://visitcount.itsvg.in/api?id=OFThub&icon=0&color=4)](https://visitcount.itsvg.in)
-
+<sub>⭐ Beğendiğin bir projeyi yıldızlamak, geliştirme motivasyonunun en iyi yakıtıdır.</sub>
 </div>
