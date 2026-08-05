@@ -111,16 +111,17 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <img src="https://user-images.githubusercontent.com/74038190/221352987-68da234d-4d62-4e9d-9d7f-098dc657c2dc.gif" width="100%">
 
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=OFThub&theme=onedark" width="100%">
+
 </div>
 
 ## 🏆 GitHub Trophies
 
 <div align="center">
 
-<img src="https://github-trophies.vercel.app/?username=OFThub&theme=dark_lover" width="100%"/>
+<img src="https://github-trophies.vercel.app/?username=OFThub&theme=onedark" width="100%"/>
 
 </div>
-
 
 ---
 
