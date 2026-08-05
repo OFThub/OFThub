@@ -2,10 +2,6 @@
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF0000,100:FF0000&height=260&section=header&text=%20Ömer%20Faruk&fontSize=48&fontColor=000000&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20&descAlignY=58&descSize=20" width="100%"/>
 
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=26&duration=3000&pause=900&color=E4405F&center=true&vCenter=true&width=650&lines=Full-Stack+%26+Mobile+Developer;C%2FC%23%2FC%2B%2B+%7C+JS%2FTS+%7C+Python;React+%C2%B7+Flutter+%C2%B7+NestJS+%C2%B7+.NET;Sürekli+%C3%B6%C4%9Freniyorum+%F0%9F%9A%80" alt="Typing SVG" />
-</a>
-
 <br/>
 
 </div>
@@ -111,45 +107,13 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <div align="center">
 
-<!-- GitHub Stats (Wakatime / Profile Stats) -->
 <img src="https://github-readme-stats.vercel.app/api?username=OFThub&show_icons=true&theme=tokyonight&rank_icon=percentile&border_radius=10" width="49%"/>
-
-<!-- En Çok Kullanılan Diller (Pasta/Pie Kart Düzeni) -->
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OFThub&layout=donut&theme=tokyonight&border_radius=10" width="49%"/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&theme=react-dark&hide_border=true&area=true" width="100%"/>
-
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=OFThub&theme=tokyonight&hide_border=true" width="70%"/>
-
-<!-- Kendi GitHub Actions runner'ın ile ürettiğin SVG çıktısı -->
-<img src="https://raw.githubusercontent.com/OFThub/OFThub/main/github-metrics.svg" width="100%"/>
-
-<img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=OFThub&theme=tokyonight" width="100%"/>
 
 <img src="https://user-images.githubusercontent.com/74038190/221352987-68da234d-4d62-4e9d-9d7f-098dc657c2dc.gif" width="80">
 
 </div>
 
 ## 🏆 GitHub Trophies
-
-<div align="center">
-  <a href="https://github.com/OFThub">
-    <img src="https://github-profile-achievements.vercel.app/api/achievements?username=OFThub&theme=tokyonight" />
-  </a>
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/OFThub/OFThub/main/profile-3d-contrib/profile-night-view.svg" width="100%" />
-</div>
-
-<div align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=OFThub&theme=tokyonight&utcOffset=3" width="49%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/analyze?username=OFThub&theme=tokyonight" width="49%" />
-</div>
-
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/wakatime?username=OFThub&theme=tokyonight&layout=compact" />
-</div>
 
 ---
 
