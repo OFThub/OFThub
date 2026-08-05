@@ -14,13 +14,6 @@
 
 <br/>
 
-<!--
-  ⚠️ NOT (silinebilir): Instagram reel'indeki gibi gerçek profil fotoğrafından
-  ASCII animasyonu üretmek istiyorsan bana fotoğrafını yükle — Instagram'a giriş
-  gerektiği için oradan çekemedim, ama gerçek fotoğrafınla o efekti kodla üretip
-  buraya (bir GIF olarak) entegre edebilirim. Şimdilik yerine ASCII isim banner'ı koydum. 👇
--->
-
 ```
  ██████╗ ███╗   ███╗███████╗██████╗
 ██╔═══██╗████╗ ████║██╔════╝██╔══██╗
@@ -143,8 +136,6 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
   <img alt="commit geçmişimi yiyen yılan animasyonu" src="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg" width="100%"/>
 </picture>
 
-<sub>⚠️ Bu görüntü çalışması için aşağıdaki kurulumu yapman gerekiyor — adımlar en altta 👇</sub>
-
 </div>
 
 ---
@@ -162,50 +153,3 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 <sub>Proudly created with ❤️, GPRM ve Claude — <a href="https://gprm.itsvg.in">GPRM</a></sub>
 
 </div>
-
-<!-- ═══════════════════════════════════════════════════════════════════
-     🔧 KURULUM NOTLARI (bu bloğu README render edilirken kimse görmez)
-     ═══════════════════════════════════════════════════════════════════
-
-     1) SNAKE (animasyonlu commit geçmişi):
-        OFThub/OFThub reposunda .github/workflows/snake.yml dosyası oluştur, içine:
-
-        name: generate snake animation
-        on:
-          schedule:
-            - cron: "0 */24 * * *"
-          workflow_dispatch:
-          push:
-            branches: [ main ]
-        jobs:
-          generate:
-            permissions:
-              contents: write
-            runs-on: ubuntu-latest
-            steps:
-              - uses: Platane/snk/svg-only@v3
-                with:
-                  github_user_name: ${{ github.repository_owner }}
-                  outputs: |
-                    dist/github-contribution-grid-snake.svg
-                    dist/github-contribution-grid-snake-dark.svg?palette=github-dark
-              - uses: crazy-max/ghaction-github-pages@v3.1.0
-                with:
-                  target_branch: output
-                  build_dir: dist
-                env:
-                  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-        Commit'le, Actions sekmesinden bir kere elle çalıştır (workflow_dispatch) — bittiğinde
-        yukarıdaki yılan görseli otomatik canlanır ve her gün kendini günceller.
-
-     2) GERÇEK FOTOĞRAF → ASCII ANİMASYON:
-        Instagram reel'e giriş gerektiği için oradan görüntü çekemedim ve profilinde
-        yüklenmiş bir fotoğrafın yok. Bana gerçek profil fotoğrafını (dosya olarak)
-        yollarsan, PIL/Pillow ile piksel→karakter dönüşümü yapıp gerçek yüzünden
-        üretilmiş, kare kare animasyonlu bir ASCII GIF'i kodlayıp bu README'ye
-        gömebilirim. Şimdilik yerine isim bazlı ASCII banner koydum.
-
-     3) Yer tutucuları ("[buraya yaz]") kendi gerçek bilgilerinle değiştirmeyi unutma —
-        İK'nın gözünü alması için içeriğin de gerçek ve dolu olması lazım.
--->
