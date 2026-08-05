@@ -109,7 +109,7 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&theme=react-dark&hide_border=true&area=true" width="100%"/>
 
-<img src="https://user-images.githubusercontent.com/74038190/221352987-68da234d-4d62-4e9d-9d7f-098dc657c2dc.gif" width="80">
+<img src="https://user-images.githubusercontent.com/74038190/221352987-68da234d-4d62-4e9d-9d7f-098dc657c2dc.gif" width="100%">
 
 </div>
 
