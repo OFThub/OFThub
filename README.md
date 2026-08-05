@@ -115,6 +115,13 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 ## 🏆 GitHub Trophies
 
+<div align="center">
+
+<img src="https://trophygithubreadmelang.cybee.dpdns.org/?username=OFThub&theme=dark_lover" width="100%"/>
+
+</div>
+
+
 ---
 
 ## 🐍 Commit Geçmişi
