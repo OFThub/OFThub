@@ -117,7 +117,7 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <div align="center">
 
-<img src="https://github-trophies.vercel.app/?username=OFThub" width="100%"/>
+<img src="https://github-trophies.vercel.app/?username=OFThub&theme=dark_lover" width="100%"/>
 
 </div>
 
