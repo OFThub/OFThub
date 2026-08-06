@@ -4,22 +4,22 @@
 
   <defs>
     <linearGradient id="tbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#0A0E18"/>
-      <stop offset="100%" stop-color="#0E1424"/>
+      <stop offset="0%" stop-color="#06070A"/>
+      <stop offset="100%" stop-color="#0D0709"/>
     </linearGradient>
     <linearGradient id="bar" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#1A2338"/>
-      <stop offset="100%" stop-color="#131A2B"/>
+      <stop offset="0%" stop-color="#1A1015"/>
+      <stop offset="100%" stop-color="#12090C"/>
     </linearGradient>
     <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FF2E63"/>
-      <stop offset="50%" stop-color="#6C5CE7"/>
-      <stop offset="100%" stop-color="#00E5FF"/>
+      <stop offset="0%" stop-color="#FF2E45"/>
+      <stop offset="50%" stop-color="#B00020"/>
+      <stop offset="100%" stop-color="#FF6B7A"/>
     </linearGradient>
     <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0%" stop-color="#00E5FF" stop-opacity="0"/>
-      <stop offset="50%" stop-color="#00E5FF" stop-opacity="0.13"/>
-      <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#FF6B7A" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#FF6B7A" stop-opacity="0.13"/>
+      <stop offset="100%" stop-color="#FF6B7A" stop-opacity="0"/>
     </linearGradient>
     <clipPath id="win"><rect x="0" y="0" width="960" height="470" rx="14"/></clipPath>
     <filter id="tglow" x="-30%" y="-30%" width="160%" height="160%">
@@ -42,12 +42,12 @@
 
     <style>
       .mono { font-family:"JetBrains Mono","SF Mono","Consolas","Liberation Mono",monospace; font-size:15px; }
-      .p  { fill:#FF2E63; }
-      .c  { fill:#E6EDF7; }
-      .g  { fill:#3DDC97; }
-      .k  { fill:#00E5FF; }
-      .s  { fill:#FFD79A; }
-      .m  { fill:#6E7F9E; }
+      .p  { fill:#FF2E45; }
+      .c  { fill:#F2EFF1; }
+      .g  { fill:#FF8A98; }
+      .k  { fill:#FF6B7A; }
+      .s  { fill:#FFB8C1; }
+      .m  { fill:#8A7680; }
 
       @keyframes type  { 0% { transform: scaleX(0); } 3.4% { transform: scaleX(1); } 90% { transform: scaleX(1); } 92%,100% { transform: scaleX(0); } }
       @keyframes blink { 0%,48% { opacity:1; } 50%,100% { opacity:0; } }
@@ -73,9 +73,9 @@
     <!-- baslik cubugu -->
     <rect width="960" height="44" fill="url(#bar)"/>
     <g>
-      <circle class="led" cx="26" cy="22" r="6" fill="#FF5F57"/>
-      <circle class="led" cx="48" cy="22" r="6" fill="#FEBC2E" style="animation-delay:.4s"/>
-      <circle class="led" cx="70" cy="22" r="6" fill="#28C840" style="animation-delay:.8s"/>
+      <circle class="led" cx="26" cy="22" r="6" fill="#FF2E45"/>
+      <circle class="led" cx="48" cy="22" r="6" fill="#C1121F" style="animation-delay:.4s"/>
+      <circle class="led" cx="70" cy="22" r="6" fill="#7A0A14" style="animation-delay:.8s"/>
     </g>
     <text class="mono m" x="480" y="27" text-anchor="middle" font-size="13">omerfaruk@github — zsh — 96×24</text>
     <rect x="0" y="43" width="960" height="1.5" fill="url(#edge)" class="eg"/>
@@ -95,17 +95,17 @@
       <g clip-path="url(#t9)"><text x="30" y="333"><tspan class="p">➜</tspan><tspan class="k" dx="10">~/omerfaruk</tspan><tspan class="c" dx="10">./contact.sh --now</tspan></text></g>
       <g clip-path="url(#t10)"><text x="30" y="363"><tspan class="g">✔ </tspan><tspan class="c">linkedin.com/in/omerfarukoft</tspan><tspan class="m">  ·  </tspan><tspan class="c">oturkdogdu1@gmail.com</tspan></text></g>
       <g clip-path="url(#t11)"><text x="30" y="393"><tspan class="p">➜</tspan><tspan class="k" dx="10">~/omerfaruk</tspan></text></g>
-      <rect class="cur" x="152" y="379" width="9" height="18" fill="#FF2E63"/>
+      <rect class="cur" x="152" y="379" width="9" height="18" fill="#FF2E45"/>
     </g>
 
     <!-- alt bilgi seridi -->
-    <rect x="0" y="426" width="960" height="44" fill="#0A101C"/>
+    <rect x="0" y="426" width="960" height="44" fill="#0B0507"/>
     <text class="mono m" x="30" y="453" font-size="12.5">uptime: since 2021 &#160;&#160;|&#160;&#160; commits: ∞ &#160;&#160;|&#160;&#160; caffeine: [========--]</text>
-    <text class="mono" x="930" y="453" font-size="12.5" text-anchor="end" fill="#3DDC97">● open to work</text>
+    <text class="mono" x="930" y="453" font-size="12.5" text-anchor="end" fill="#FF8A98">● open to work</text>
 
     <!-- tarama efekti -->
     <g class="scan"><rect x="0" y="0" width="960" height="120" fill="url(#scan)"/></g>
 
-    <rect x="0" y="0" width="960" height="470" rx="14" fill="none" stroke="#233149" stroke-width="1.5"/>
+    <rect x="0" y="0" width="960" height="470" rx="14" fill="none" stroke="#3A1620" stroke-width="1.5"/>
   </g>
 </svg>

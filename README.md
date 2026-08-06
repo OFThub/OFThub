@@ -1,24 +1,50 @@
+<!--
+  ═══════════════════════════════════════════════════════════════
+   TEMA: GitHub'in koyu temasinda SIYAH + KIRMIZI,
+         acik temasinda BEYAZ + YESIL palet gosterilir.
+   Mekanizma: <picture> + (prefers-color-scheme) — her gorselin
+   -dark ve -light varyanti assets/ altinda durur.
+  ═══════════════════════════════════════════════════════════════
+-->
+
 <!-- ═══════════════════════ HERO ═══════════════════════ -->
 <div align="center">
 
-<img src="assets/hero.svg" width="100%" alt="Ömer Faruk Türkdoğdu — Full-Stack Developer"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg"/>
+  <img src="assets/hero-light.svg" width="100%" alt="Ömer Faruk Türkdoğdu — Full-Stack Developer"/>
+</picture>
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=700&color=FF2E63&center=true&vCenter=true&width=900&height=64&lines=Full-Stack+Developer+%7C+Istanbul%2C+TR;React+%C2%B7+Next.js+%C2%B7+Node.js+%C2%B7+.NET;Flutter+ile+mobil%2C+Python+ile+yapay+zeka;Temiz+kod%2C+%C3%B6l%C3%A7eklenebilir+mimari;Her+commit+bir+y%C3%B6n%2C+her+bug+bir+fikir" alt="Roller"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=700&color=FF2E45&center=true&vCenter=true&width=900&height=64&lines=Full-Stack+Developer+%7C+Istanbul%2C+TR;React+%C2%B7+Next.js+%C2%B7+Node.js+%C2%B7+.NET;Flutter+ile+mobil%2C+Python+ile+yapay+zeka;Temiz+kod%2C+%C3%B6l%C3%A7eklenebilir+mimari;Her+commit+bir+y%C3%B6n%2C+her+bug+bir+fikir"/>
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=24&duration=2600&pause=700&color=0E9F6E&center=true&vCenter=true&width=900&height=64&lines=Full-Stack+Developer+%7C+Istanbul%2C+TR;React+%C2%B7+Next.js+%C2%B7+Node.js+%C2%B7+.NET;Flutter+ile+mobil%2C+Python+ile+yapay+zeka;Temiz+kod%2C+%C3%B6l%C3%A7eklenebilir+mimari;Her+commit+bir+y%C3%B6n%2C+her+bug+bir+fikir" alt="Roller"/>
+</picture>
 
 <a href="https://linkedin.com/in/omerfarukoft"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="mailto:oturkdogdu1@gmail.com"><img src="https://img.shields.io/badge/Email-FF2E63?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta"/></a>
-<a href="https://instagram.com/omerfaruk.oft"><img src="https://img.shields.io/badge/Instagram-6C5CE7?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
-<a href="https://github.com/OFThub?tab=repositories"><img src="https://img.shields.io/badge/30%2B%20Repo-00E5FF?style=for-the-badge&logo=github&logoColor=0D1117" alt="Repolar"/></a>
+<a href="mailto:oturkdogdu1@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta"/></a>
+<a href="https://instagram.com/omerfaruk.oft"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/></a>
+<a href="https://github.com/OFThub?tab=repositories"><img src="https://img.shields.io/badge/30%2B%20Repo-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Repolar"/></a>
 
-<img src="https://komarev.com/ghpvc/?username=OFThub&label=PROFILE+VIEWS&color=FF2E63&style=for-the-badge" alt="Görüntülenme"/>
-<img src="https://img.shields.io/badge/OPEN%20TO%20WORK-3DDC97?style=for-the-badge&logoColor=0D1117" alt="İşe açık"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://komarev.com/ghpvc/?username=OFThub&label=PROFILE+VIEWS&color=FF2E45&style=for-the-badge"/>
+  <img src="https://komarev.com/ghpvc/?username=OFThub&label=PROFILE+VIEWS&color=0E9F6E&style=for-the-badge" alt="Görüntülenme"/>
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://img.shields.io/badge/OPEN%20TO%20WORK-FF2E45?style=for-the-badge&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OPEN%20TO%20WORK-0E9F6E?style=for-the-badge&logoColor=white" alt="İşe açık"/>
+</picture>
 
 </div>
 
 <!-- ═══════════════════════ TERMİNAL ═══════════════════════ -->
 <div align="center">
 
-<img src="assets/terminal.svg" width="94%" alt="whoami terminali"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/terminal-light.svg"/>
+  <img src="assets/terminal-light.svg" width="94%" alt="whoami terminali"/>
+</picture>
 
 </div>
 
@@ -52,7 +78,11 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <div align="center">
 
-<img src="assets/skills.svg" width="94%" alt="Animasyonlu yetenek matrisi"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/skills-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/skills-light.svg"/>
+  <img src="assets/skills-light.svg" width="94%" alt="Animasyonlu yetenek matrisi"/>
+</picture>
 
 </div>
 
@@ -104,14 +134,32 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <div align="center">
 
-<a href="https://github.com/OFThub/MangaStudio-Pro"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=MangaStudio-Pro&bg_color=0D1117&title_color=FF2E63&icon_color=FF9F1C&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="MangaStudio-Pro"/></a>
-<a href="https://github.com/OFThub/PlannerAgent"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=PlannerAgent&bg_color=0D1117&title_color=FF2E63&icon_color=FF9F1C&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="PlannerAgent"/></a>
+<a href="https://github.com/OFThub/MangaStudio-Pro"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=MangaStudio-Pro&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=MangaStudio-Pro&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="MangaStudio-Pro"/>
+</picture></a>
+<a href="https://github.com/OFThub/PlannerAgent"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=PlannerAgent&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=PlannerAgent&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="PlannerAgent"/>
+</picture></a>
 
-<a href="https://github.com/OFThub/ArnavutkoyCBS"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=ArnavutkoyCBS&bg_color=0D1117&title_color=00E5FF&icon_color=6C5CE7&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="ArnavutkoyCBS"/></a>
-<a href="https://github.com/OFThub/StockPredictions"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=StockPredictions&bg_color=0D1117&title_color=00E5FF&icon_color=6C5CE7&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="StockPredictions"/></a>
+<a href="https://github.com/OFThub/ArnavutkoyCBS"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=ArnavutkoyCBS&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=ArnavutkoyCBS&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="ArnavutkoyCBS"/>
+</picture></a>
+<a href="https://github.com/OFThub/StockPredictions"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=StockPredictions&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=StockPredictions&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="StockPredictions"/>
+</picture></a>
 
-<a href="https://github.com/OFThub/AIContentPlatform"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=AIContentPlatform&bg_color=0D1117&title_color=FF9F1C&icon_color=FF2E63&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="AIContentPlatform"/></a>
-<a href="https://github.com/OFThub/Sportify"><img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=Sportify&bg_color=0D1117&title_color=FF9F1C&icon_color=FF2E63&text_color=C9D1D9&border_color=1F2B44" width="49%" alt="Sportify"/></a>
+<a href="https://github.com/OFThub/AIContentPlatform"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=AIContentPlatform&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=AIContentPlatform&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="AIContentPlatform"/>
+</picture></a>
+<a href="https://github.com/OFThub/Sportify"><picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=Sportify&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=Sportify&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="Sportify"/>
+</picture></a>
 
 </div>
 
@@ -138,12 +186,24 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=OFThub&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=FF2E63&icon_color=FF9F1C&text_color=C9D1D9&ring_color=6C5CE7" width="49%" alt="GitHub istatistikleri"/>
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OFThub&layout=compact&langs_count=10&hide_border=true&bg_color=0D1117&title_color=FF2E63&text_color=C9D1D9" width="41%" alt="En çok kullanılan diller"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=OFThub&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&ring_color=FF2E45"/>
+  <img src="https://github-readme-stats.vercel.app/api?username=OFThub&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&ring_color=0E9F6E" width="49%" alt="GitHub istatistikleri"/>
+</picture>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=OFThub&layout=compact&langs_count=10&hide_border=true&bg_color=0D1117&title_color=FF2E45&text_color=C9D1D9"/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OFThub&layout=compact&langs_count=10&hide_border=true&bg_color=FFFFFF&title_color=0E9F6E&text_color=24292F" width="41%" alt="En çok kullanılan diller"/>
+</picture>
 
-<img src="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=0D1117&stroke=1F2B44&ring=FF2E63&fire=FF9F1C&currStreakLabel=00E5FF&sideLabels=C9D1D9&dates=6E7F9E&currStreakNum=FFFFFF&sideNums=FFFFFF" width="91%" alt="Commit serisi"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=0D1117&stroke=3A1620&ring=FF2E45&fire=FF6B7A&currStreakLabel=FF2E45&sideLabels=C9D1D9&dates=8A7680&currStreakNum=FFFFFF&sideNums=FFFFFF"/>
+  <img src="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=FFFFFF&stroke=CFE6D8&ring=0E9F6E&fire=34D399&currStreakLabel=0E9F6E&sideLabels=24292F&dates=5E7A6C&currStreakNum=0B2318&sideNums=0B2318" width="91%" alt="Commit serisi"/>
+</picture>
 
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&bg_color=0D1117&color=E6EDF7&line=FF2E63&point=00E5FF&area=true&area_color=6C5CE7&hide_border=true&custom_title=Katki%20Grafigi" width="91%" alt="Katkı grafiği"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&bg_color=0D1117&color=E6EDF7&line=FF2E45&point=FF6B7A&area=true&area_color=B00020&hide_border=true&custom_title=Katki%20Grafigi"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&bg_color=FFFFFF&color=0B2318&line=0E9F6E&point=065F46&area=true&area_color=34D399&hide_border=true&custom_title=Katki%20Grafigi" width="91%" alt="Katkı grafiği"/>
+</picture>
 
 </div>
 
@@ -151,7 +211,10 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 <div align="center">
 
-<img src="https://github-profile-trophy.vercel.app/?username=OFThub&theme=algolia&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" width="97%" alt="GitHub kupaları"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=OFThub&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6"/>
+  <img src="https://github-profile-trophy.vercel.app/?username=OFThub&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" width="97%" alt="GitHub kupaları"/>
+</picture>
 
 </div>
 
@@ -184,12 +247,15 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 Kapı her zaman açık — bir mesaj yeterli.
 
 <a href="https://linkedin.com/in/omerfarukoft"><img src="https://img.shields.io/badge/LinkedIn'de%20ba%C4%9Flan-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a href="mailto:oturkdogdu1@gmail.com"><img src="https://img.shields.io/badge/E--posta%20g%C3%B6nder-FF2E63?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta"/></a>
-<a href="https://github.com/OFThub?tab=repositories"><img src="https://img.shields.io/badge/Projelerimi%20incele-6C5CE7?style=for-the-badge&logo=github&logoColor=white" alt="Projeler"/></a>
+<a href="mailto:oturkdogdu1@gmail.com"><img src="https://img.shields.io/badge/E--posta%20g%C3%B6nder-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-posta"/></a>
+<a href="https://github.com/OFThub?tab=repositories"><img src="https://img.shields.io/badge/Projelerimi%20incele-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Projeler"/></a>
 
 </div>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:FF2E63,50:6C5CE7,100:00E5FF&height=170&section=footer&text=Thanks%20for%20scrolling!&fontSize=26&fontColor=ffffff&fontAlignY=72&animation=twinkling" width="100%"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=0:B00020,50:FF2E45,100:FF6B7A&height=170&section=footer&text=Thanks%20for%20scrolling!&fontSize=26&fontColor=ffffff&fontAlignY=72&animation=twinkling"/>
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:065F46,50:0E9F6E,100:34D399&height=170&section=footer&text=Thanks%20for%20scrolling!&fontSize=26&fontColor=ffffff&fontAlignY=72&animation=twinkling" width="100%" alt=""/>
+</picture>
 
 <div align="center">
 <sub>⭐ Beğendiğin bir projeyi yıldızlamak, geliştirme motivasyonunun en iyi yakıtıdır.</sub>

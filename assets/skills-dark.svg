@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430" role="img" aria-label="Yetenek matrisi - animasyonlu seviye cubuklari">
+  <title>Skill Matrix</title>
+
+  <defs>
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06070A"/>
+      <stop offset="100%" stop-color="#100609"/>
+    </linearGradient>
+    <linearGradient id="fill1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF2E45"/><stop offset="100%" stop-color="#B00020"/>
+    </linearGradient>
+    <linearGradient id="fill2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF6B7A"/><stop offset="100%" stop-color="#8B0F1F"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0" spreadMethod="repeat">
+      <stop offset="0%"   stop-color="#fff" stop-opacity="0"/>
+      <stop offset="38%"  stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#fff" stop-opacity="0.65"/>
+      <stop offset="62%"  stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="2.8s" repeatCount="indefinite"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF2E45" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#FF2E45"/>
+      <stop offset="70%" stop-color="#8B0F1F"/>
+      <stop offset="100%" stop-color="#FF6B7A" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="scard"><rect width="960" height="430" rx="18"/></clipPath>
+    <filter id="bglow" x="-20%" y="-120%" width="140%" height="340%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <style>
+      .mono { font-family:"JetBrains Mono","SF Mono","Consolas",monospace; }
+      .sans { font-family:"Segoe UI",Inter,-apple-system,Helvetica,Arial,sans-serif; }
+      .lbl  { fill:#EDE6E8; font-size:14.5px; }
+      .pct  { fill:#9A8189; font-size:13px; }
+
+      @keyframes grow  { 0% { transform: scaleX(0); } 16% { transform: scaleX(1); } 88% { transform: scaleX(1); } 96%,100% { transform: scaleX(0); } }
+      @keyframes fadeUp{ 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
+      @keyframes pulse { 0%,100% { opacity:.4; } 50% { opacity:1; } }
+
+      .barL { transform-origin: 40px 0;  animation: grow 12s cubic-bezier(.2,.85,.25,1) infinite; }
+      .barR { transform-origin: 520px 0; animation: grow 12s cubic-bezier(.2,.85,.25,1) infinite; }
+      .r1{animation-delay:0s} .r2{animation-delay:.14s} .r3{animation-delay:.28s} .r4{animation-delay:.42s} .r5{animation-delay:.56s}
+      .in  { animation: fadeUp .7s ease both; }
+      .dot { animation: pulse 2.6s ease-in-out infinite; }
+    </style>
+  </defs>
+
+  <g clip-path="url(#scard)">
+    <rect width="960" height="430" fill="url(#sbg)"/>
+    <rect x="0" y="0" width="960" height="2.5" fill="url(#hair)"/>
+
+    <!-- baslik -->
+    <g class="in">
+      <circle class="dot" cx="42" cy="45" r="4.5" fill="#FF2E45"/>
+      <text class="sans" x="58" y="51" font-size="19" font-weight="700" fill="#FBF6F7" letter-spacing="3.5">SKILL MATRIX</text>
+      <text class="mono" x="920" y="50" font-size="12.5" fill="#8A7680" text-anchor="end">// self-assessed · always updating</text>
+    </g>
+    <rect x="40" y="70" width="880" height="1" fill="#1E2A42"/>
+
+    <!-- SOL KOLON -->
+    <g>
+      <g class="in" style="animation-delay:.10s">
+        <text class="mono lbl" x="40" y="112">TypeScript · JavaScript</text>
+        <text class="mono pct" x="420" y="112" text-anchor="end">92%</text>
+        <rect x="40" y="120" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barL r1" filter="url(#bglow)">
+          <rect x="40" y="120" width="350" height="9" rx="4.5" fill="url(#fill1)"/>
+          <rect x="40" y="120" width="350" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.18s">
+        <text class="mono lbl" x="40" y="174">React · Next.js</text>
+        <text class="mono pct" x="420" y="174" text-anchor="end">90%</text>
+        <rect x="40" y="182" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barL r2" filter="url(#bglow)">
+          <rect x="40" y="182" width="342" height="9" rx="4.5" fill="url(#fill1)"/>
+          <rect x="40" y="182" width="342" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.26s">
+        <text class="mono lbl" x="40" y="236">Node.js · NestJS · Express</text>
+        <text class="mono pct" x="420" y="236" text-anchor="end">86%</text>
+        <rect x="40" y="244" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barL r3" filter="url(#bglow)">
+          <rect x="40" y="244" width="327" height="9" rx="4.5" fill="url(#fill1)"/>
+          <rect x="40" y="244" width="327" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.34s">
+        <text class="mono lbl" x="40" y="298">C# · .NET</text>
+        <text class="mono pct" x="420" y="298" text-anchor="end">80%</text>
+        <rect x="40" y="306" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barL r4" filter="url(#bglow)">
+          <rect x="40" y="306" width="304" height="9" rx="4.5" fill="url(#fill1)"/>
+          <rect x="40" y="306" width="304" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.42s">
+        <text class="mono lbl" x="40" y="360">Python · AI / ML</text>
+        <text class="mono pct" x="420" y="360" text-anchor="end">84%</text>
+        <rect x="40" y="368" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barL r5" filter="url(#bglow)">
+          <rect x="40" y="368" width="319" height="9" rx="4.5" fill="url(#fill1)"/>
+          <rect x="40" y="368" width="319" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+    </g>
+
+    <!-- dikey ayirac -->
+    <rect x="470" y="90" width="1" height="300" fill="#2E181F"/>
+
+    <!-- SAG KOLON -->
+    <g>
+      <g class="in" style="animation-delay:.14s">
+        <text class="mono lbl" x="520" y="112">Flutter · Dart</text>
+        <text class="mono pct" x="900" y="112" text-anchor="end">82%</text>
+        <rect x="520" y="120" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barR r1" filter="url(#bglow)">
+          <rect x="520" y="120" width="312" height="9" rx="4.5" fill="url(#fill2)"/>
+          <rect x="520" y="120" width="312" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.22s">
+        <text class="mono lbl" x="520" y="174">PostgreSQL · MongoDB · Redis</text>
+        <text class="mono pct" x="900" y="174" text-anchor="end">85%</text>
+        <rect x="520" y="182" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barR r2" filter="url(#bglow)">
+          <rect x="520" y="182" width="323" height="9" rx="4.5" fill="url(#fill2)"/>
+          <rect x="520" y="182" width="323" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.30s">
+        <text class="mono lbl" x="520" y="236">Docker · CI/CD · Linux</text>
+        <text class="mono pct" x="900" y="236" text-anchor="end">76%</text>
+        <rect x="520" y="244" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barR r3" filter="url(#bglow)">
+          <rect x="520" y="244" width="289" height="9" rx="4.5" fill="url(#fill2)"/>
+          <rect x="520" y="244" width="289" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.38s">
+        <text class="mono lbl" x="520" y="298">UI / UX · Figma · Motion</text>
+        <text class="mono pct" x="900" y="298" text-anchor="end">88%</text>
+        <rect x="520" y="306" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barR r4" filter="url(#bglow)">
+          <rect x="520" y="306" width="334" height="9" rx="4.5" fill="url(#fill2)"/>
+          <rect x="520" y="306" width="334" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+
+      <g class="in" style="animation-delay:.46s">
+        <text class="mono lbl" x="520" y="360">Git · Clean Architecture</text>
+        <text class="mono pct" x="900" y="360" text-anchor="end">90%</text>
+        <rect x="520" y="368" width="380" height="9" rx="4.5" fill="#24141A"/>
+        <g class="barR r5" filter="url(#bglow)">
+          <rect x="520" y="368" width="342" height="9" rx="4.5" fill="url(#fill2)"/>
+          <rect x="520" y="368" width="342" height="9" rx="4.5" fill="url(#sheen)"/>
+        </g>
+      </g>
+    </g>
+
+    <rect width="960" height="430" rx="18" fill="none" stroke="#3A1620" stroke-width="1.5"/>
+  </g>
+</svg>
