@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430" role="img" aria-label="Commit arcade - tetris ve yukleme animasyonu">
+  <title>Contribution Arcade</title>
+  <defs>
+    <linearGradient id="abg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F2FAF5"/>
+    </linearGradient>
+    <linearGradient id="ahair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0E9F6E" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#0E9F6E"/>
+      <stop offset="70%" stop-color="#065F46"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barfill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#065F46"/><stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="barsheen" x1="0" y1="0" x2="1" y2="0" spreadMethod="repeat">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.6"/>
+      <stop offset="58%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="2.2s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="acard"><rect width="960" height="430" rx="18"/></clipPath>
+    <clipPath id="well"><rect x="40" y="78" width="600" height="216"/></clipPath>
+    <filter id="aglow" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="1.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <g id="row" fill="#DCEDE3">
+      <rect x="40"  y="78" width="20" height="20" rx="4"/><rect x="64"  y="78" width="20" height="20" rx="4"/>
+      <rect x="88"  y="78" width="20" height="20" rx="4"/><rect x="112" y="78" width="20" height="20" rx="4"/>
+      <rect x="136" y="78" width="20" height="20" rx="4"/><rect x="160" y="78" width="20" height="20" rx="4"/>
+      <rect x="184" y="78" width="20" height="20" rx="4"/><rect x="208" y="78" width="20" height="20" rx="4"/>
+      <rect x="232" y="78" width="20" height="20" rx="4"/><rect x="256" y="78" width="20" height="20" rx="4"/>
+      <rect x="280" y="78" width="20" height="20" rx="4"/><rect x="304" y="78" width="20" height="20" rx="4"/>
+      <rect x="328" y="78" width="20" height="20" rx="4"/><rect x="352" y="78" width="20" height="20" rx="4"/>
+      <rect x="376" y="78" width="20" height="20" rx="4"/><rect x="400" y="78" width="20" height="20" rx="4"/>
+      <rect x="424" y="78" width="20" height="20" rx="4"/><rect x="448" y="78" width="20" height="20" rx="4"/>
+      <rect x="472" y="78" width="20" height="20" rx="4"/><rect x="496" y="78" width="20" height="20" rx="4"/>
+      <rect x="520" y="78" width="20" height="20" rx="4"/><rect x="544" y="78" width="20" height="20" rx="4"/>
+      <rect x="568" y="78" width="20" height="20" rx="4"/><rect x="592" y="78" width="20" height="20" rx="4"/>
+      <rect x="616" y="78" width="20" height="20" rx="4"/>
+    </g>
+    <style>
+      .mono { font-family:"JetBrains Mono","SF Mono","Consolas",monospace; }
+      .sans { font-family:"Segoe UI",Inter,-apple-system,Helvetica,Arial,sans-serif; }
+      .hd  { fill:#062B1D; font-size:18px; font-weight:700; letter-spacing:3.2px; }
+      .sm  { fill:#6E8A7B; font-size:12px; }
+      .lb  { fill:#0B2318; font-size:13px; }
+
+      /* tetromino dususu: yukaridan gelir, oturur, dongu sonunda satir temizlenir */
+      @keyframes fall  { 0% { transform: translateY(-190px); opacity:0; }
+                         6% { opacity:1; }
+                         38%,88% { transform: translateY(0); opacity:1; }
+                         94%,100% { transform: translateY(0); opacity:0; } }
+      @keyframes flash { 0%,86% { opacity:0; } 89% { opacity:.9; } 92%,100% { opacity:0; } }
+      @keyframes settle{ 0%,30% { opacity:0; } 36%,88% { opacity:1; } 94%,100% { opacity:0; } }
+      @keyframes blink { 0%,49% { opacity:1; } 50%,100% { opacity:0; } }
+      @keyframes pulse { 0%,100% { opacity:.4; } 50% { opacity:1; } }
+      @keyframes load  { 0% { transform: scaleX(0); } 78%,100% { transform: scaleX(1); } }
+      @keyframes fadeUp{ 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
+
+      .piece { animation: fall 9s cubic-bezier(.5,0,.7,.4) infinite; }
+      .p1{animation-delay:0s}   .p2{animation-delay:.5s} .p3{animation-delay:1.05s}
+      .p4{animation-delay:1.6s} .p5{animation-delay:2.15s} .p6{animation-delay:2.7s} .p7{animation-delay:3.25s}
+      .base  { animation: settle 9s linear infinite; }
+      .clear { animation: flash 9s linear infinite; }
+      .cur   { animation: blink 1s step-end infinite; }
+      .dot   { animation: pulse 2.6s ease-in-out infinite; }
+      .bar   { transform-origin: 40px 0; animation: load 9s cubic-bezier(.35,.9,.3,1) infinite; }
+      .in    { animation: fadeUp .7s ease both; }
+      .t1{animation-delay:0s} .t2{animation-delay:.35s} .t3{animation-delay:.7s} .t4{animation-delay:1.05s}
+    </style>
+  </defs>
+
+  <g clip-path="url(#acard)">
+    <rect width="960" height="430" fill="url(#abg)"/>
+    <rect width="960" height="2.5" fill="url(#ahair)"/>
+
+    <g class="in">
+      <circle class="dot" cx="42" cy="45" r="4.5" fill="#0E9F6E"/>
+      <text class="sans hd" x="58" y="51">CONTRIBUTION ARCADE</text>
+      <text class="mono sm" x="920" y="50" text-anchor="end">// commits &#8594; blocks</text>
+    </g>
+    <rect x="40" y="66" width="880" height="1" fill="#D4E7DB"/>
+
+    <!-- ══════ TETRIS KUYUSU ══════ -->
+    <g clip-path="url(#well)">
+      <use href="#row"/><use href="#row" y="24"/><use href="#row" y="48"/><use href="#row" y="72"/>
+      <use href="#row" y="96"/><use href="#row" y="120"/><use href="#row" y="144"/><use href="#row" y="168"/>
+
+      <!-- oturmus taban (en alt satir) -->
+      <g class="base" fill="#047857">
+        <rect x="40"  y="270" width="20" height="20" rx="4"/><rect x="64"  y="270" width="20" height="20" rx="4"/>
+        <rect x="88"  y="270" width="20" height="20" rx="4"/><rect x="112" y="270" width="20" height="20" rx="4"/>
+        <rect x="136" y="270" width="20" height="20" rx="4"/><rect x="160" y="270" width="20" height="20" rx="4"/>
+        <rect x="184" y="270" width="20" height="20" rx="4"/><rect x="208" y="270" width="20" height="20" rx="4"/>
+        <rect x="232" y="270" width="20" height="20" rx="4"/><rect x="256" y="270" width="20" height="20" rx="4"/>
+        <rect x="280" y="270" width="20" height="20" rx="4"/><rect x="304" y="270" width="20" height="20" rx="4"/>
+        <rect x="328" y="270" width="20" height="20" rx="4"/><rect x="352" y="270" width="20" height="20" rx="4"/>
+        <rect x="376" y="270" width="20" height="20" rx="4"/><rect x="400" y="270" width="20" height="20" rx="4"/>
+        <rect x="424" y="270" width="20" height="20" rx="4"/><rect x="448" y="270" width="20" height="20" rx="4"/>
+        <rect x="472" y="270" width="20" height="20" rx="4"/><rect x="496" y="270" width="20" height="20" rx="4"/>
+        <rect x="520" y="270" width="20" height="20" rx="4"/><rect x="544" y="270" width="20" height="20" rx="4"/>
+        <rect x="568" y="270" width="20" height="20" rx="4"/><rect x="592" y="270" width="20" height="20" rx="4"/>
+        <rect x="616" y="270" width="20" height="20" rx="4"/>
+      </g>
+
+      <!-- dusen tetromino'lar -->
+      <g class="piece p1" fill="#0E9F6E" filter="url(#aglow)">
+        <rect x="40" y="222" width="20" height="20" rx="4"/><rect x="64" y="222" width="20" height="20" rx="4"/>
+        <rect x="40" y="246" width="20" height="20" rx="4"/><rect x="64" y="246" width="20" height="20" rx="4"/>
+      </g>
+      <g class="piece p2" fill="#34D399" filter="url(#aglow)">
+        <rect x="112" y="222" width="20" height="20" rx="4"/>
+        <rect x="112" y="246" width="20" height="20" rx="4"/><rect x="136" y="246" width="20" height="20" rx="4"/>
+      </g>
+      <g class="piece p3" fill="#065F46" filter="url(#aglow)">
+        <rect x="184" y="246" width="20" height="20" rx="4"/><rect x="208" y="246" width="20" height="20" rx="4"/>
+        <rect x="232" y="246" width="20" height="20" rx="4"/><rect x="256" y="246" width="20" height="20" rx="4"/>
+      </g>
+      <g class="piece p4" fill="#0E9F6E" filter="url(#aglow)">
+        <rect x="304" y="222" width="20" height="20" rx="4"/>
+        <rect x="280" y="246" width="20" height="20" rx="4"/><rect x="304" y="246" width="20" height="20" rx="4"/><rect x="328" y="246" width="20" height="20" rx="4"/>
+      </g>
+      <g class="piece p5" fill="#34D399" filter="url(#aglow)">
+        <rect x="376" y="222" width="20" height="20" rx="4"/><rect x="400" y="222" width="20" height="20" rx="4"/>
+        <rect x="352" y="246" width="20" height="20" rx="4"/><rect x="376" y="246" width="20" height="20" rx="4"/>
+      </g>
+      <g class="piece p6" fill="#065F46" filter="url(#aglow)">
+        <rect x="448" y="222" width="20" height="20" rx="4"/><rect x="472" y="222" width="20" height="20" rx="4"/>
+        <rect x="448" y="246" width="20" height="20" rx="4"/><rect x="472" y="246" width="20" height="20" rx="4"/>
+      </g>
+      <g class="piece p7" fill="#0E9F6E" filter="url(#aglow)">
+        <rect x="520" y="246" width="20" height="20" rx="4"/><rect x="544" y="246" width="20" height="20" rx="4"/>
+        <rect x="568" y="246" width="20" height="20" rx="4"/><rect x="592" y="246" width="20" height="20" rx="4"/>
+      </g>
+
+      <!-- satir temizleme flasi -->
+      <rect class="clear" x="40" y="242" width="600" height="52" fill="#043D2D"/>
+    </g>
+    <rect x="39" y="77" width="602" height="218" rx="6" fill="none" stroke="#CFE6D8" stroke-width="1.2"/>
+
+    <!-- ══════ SAG PANEL: skor tablosu ══════ -->
+    <g class="mono">
+      <rect x="664" y="78" width="256" height="216" rx="10" fill="#F7FCF9" stroke="#CFE6D8" stroke-width="1.2"/>
+      <text class="sm" x="684" y="104">NEXT</text>
+      <g fill="#34D399" opacity=".85">
+        <rect x="684" y="116" width="16" height="16" rx="3"/><rect x="704" y="116" width="16" height="16" rx="3"/>
+        <rect x="684" y="136" width="16" height="16" rx="3"/><rect x="704" y="136" width="16" height="16" rx="3"/>
+      </g>
+      <rect x="684" y="168" width="216" height="1" fill="#D4E7DB"/>
+      <text class="lb in t1" x="684" y="194">LINES  <tspan fill="#0E9F6E">1 247</tspan></text>
+      <text class="lb in t2" x="684" y="218">LEVEL  <tspan fill="#0E9F6E">full-stack</tspan></text>
+      <text class="lb in t3" x="684" y="242">COMBO  <tspan fill="#0E9F6E">x30 repo</tspan></text>
+      <text class="lb in t4" x="684" y="266">STATE  <tspan fill="#34D399">still playing</tspan></text>
+    </g>
+
+    <!-- ══════ YUKLEME COUBUGU ══════ -->
+    <g class="mono">
+      <text class="lb" x="40" y="330">$ git log --oneline | building profile<tspan class="cur" fill="#0E9F6E" dx="8">▊</tspan></text>
+      <rect x="40" y="346" width="880" height="12" rx="6" fill="#DCEDE3"/>
+      <g class="bar">
+        <rect x="40" y="346" width="880" height="12" rx="6" fill="url(#barfill)"/>
+        <rect x="40" y="346" width="880" height="12" rx="6" fill="url(#barsheen)"/>
+      </g>
+      <text class="sm" x="40"  y="382">packing objects</text>
+      <text class="sm" x="240" y="382">resolving deltas</text>
+      <text class="sm" x="450" y="382">writing history</text>
+      <text class="sm" x="650" y="382">deploying dreams</text>
+      <text class="sm" x="920" y="382" text-anchor="end" fill="#34D399">∞ %</text>
+    </g>
+
+    <rect width="960" height="430" rx="18" fill="none" stroke="#CFE6D8" stroke-width="1.5"/>
+  </g>
+</svg>

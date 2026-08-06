@@ -1,0 +1,49 @@
+name: contribution games
+
+# Snake + arcade oyunlarini TEK is icinde uretip TEK push ile 'output' dalina yaziyoruz.
+# Ayri workflow'lar ayni dala push ederse ghaction-github-pages dali sifirladigi icin
+# biri digerinin ciktisini siler.
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [ main ]
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      # Once arcade oyunlari: dist/ klasorunu bu adim olusturur.
+      - name: arcade games (pacman, breakout, galaga, minesweeper, puzzle-bobble, bomberman)
+        uses: abozanona/pacman-contribution-graph@v5.0.0
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          games: 'pacman,breakout,galaga,minesweeper,puzzle-bobble,bomberman'
+          player_style: 'aggressive'
+          hide_month_labels: 'false'
+
+      # Snake sadece belirtilen dosyalari yazar, dist icerigini silmez.
+      - name: snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      - name: list generated files
+        run: ls -la dist
+
+      - name: push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

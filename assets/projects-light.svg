@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 500" width="960" height="500" role="img" aria-label="One cikan projeler">
+  <title>Öne Çıkan Projeler</title>
+  <defs>
+    <linearGradient id="pbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F2FAF5"/>
+    </linearGradient>
+    <linearGradient id="cardbg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F7FCF9"/>
+    </linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0E9F6E" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#0E9F6E"/>
+      <stop offset="70%" stop-color="#065F46"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="runner" x1="0" y1="0" x2="1" y2="0" spreadMethod="repeat">
+      <stop offset="0%" stop-color="#0E9F6E" stop-opacity="0"/>
+      <stop offset="42%" stop-color="#0E9F6E" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#34D399" stop-opacity="1"/>
+      <stop offset="58%" stop-color="#0E9F6E" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0E9F6E" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="3.4s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="pcard"><rect width="960" height="500" rx="18"/></clipPath>
+    <style>
+      .mono { font-family:"JetBrains Mono","SF Mono","Consolas",monospace; }
+      .sans { font-family:"Segoe UI",Inter,-apple-system,Helvetica,Arial,sans-serif; }
+      .nm   { fill:#0B2318; font-size:16px; font-weight:700; }
+      .ds   { fill:#5E7A6C; font-size:12.5px; }
+      .tg   { fill:#0A5C42; font-size:11px; }
+      .hd   { fill:#062B1D; font-size:19px; font-weight:700; letter-spacing:3.5px; }
+      .sm   { fill:#6E8A7B; font-size:12.5px; }
+
+      @keyframes cardIn { 0% { opacity:0; transform: translateY(22px); } 100% { opacity:1; transform: translateY(0); } }
+      @keyframes pulse  { 0%,100% { opacity:.4; } 50% { opacity:1; } }
+      @keyframes fadeUp { 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
+
+      .card { animation: cardIn .85s cubic-bezier(.2,.85,.25,1) both; }
+      .k1{animation-delay:.05s} .k2{animation-delay:.17s} .k3{animation-delay:.29s}
+      .k4{animation-delay:.41s} .k5{animation-delay:.53s} .k6{animation-delay:.65s}
+      .in   { animation: fadeUp .7s ease both; }
+      .dot  { animation: pulse 2.6s ease-in-out infinite; }
+      .d2{animation-delay:.3s} .d3{animation-delay:.6s}
+      .d4{animation-delay:.9s} .d5{animation-delay:1.2s} .d6{animation-delay:1.5s}
+    </style>
+  </defs>
+
+  <g clip-path="url(#pcard)">
+    <rect width="960" height="500" fill="url(#pbg)"/>
+    <rect width="960" height="2.5" fill="url(#hair)"/>
+
+    <g class="in">
+      <circle class="dot" cx="42" cy="45" r="4.5" fill="#0E9F6E"/>
+      <text class="sans hd" x="58" y="51">FEATURED WORK</text>
+      <text class="mono sm" x="920" y="50" text-anchor="end">// github.com/OFThub</text>
+    </g>
+    <rect x="40" y="70" width="880" height="1" fill="#D4E7DB"/>
+
+    <!-- 1: MangaStudio-Pro -->
+    <g transform="translate(40,92)"><g class="card k1">
+      <rect width="425" height="122" rx="12" fill="url(#cardbg)" stroke="#CFE6D8" stroke-width="1.2"/>
+      <rect x="1" y="1" width="423" height="2" rx="1" fill="url(#runner)"/>
+      <circle class="dot" cx="24" cy="30" r="5" fill="#0E9F6E"/>
+      <text class="mono nm" x="40" y="35">MangaStudio-Pro</text>
+      <text class="sans ds" x="24" y="60">Yapay zekâ destekli manga/çizim üretim</text>
+      <text class="sans ds" x="24" y="78">stüdyosu — panel, poz ve stil aktarımı.</text>
+      <g class="mono tg">
+        <rect x="24" y="90" width="78" height="21" rx="10" fill="#0E9F6E" fill-opacity=".13" stroke="#0E9F6E" stroke-opacity=".45"/><text x="63" y="105" text-anchor="middle">TypeScript</text>
+        <rect x="110" y="90" width="62" height="21" rx="10" fill="#065F46" fill-opacity=".22" stroke="#065F46" stroke-opacity=".6"/><text x="141" y="105" text-anchor="middle">Next.js</text>
+        <rect x="180" y="90" width="46" height="21" rx="10" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".4"/><text x="203" y="105" text-anchor="middle">AI</text>
+      </g>
+    </g></g>
+
+    <!-- 2: PlannerAgent -->
+    <g transform="translate(495,92)"><g class="card k2">
+      <rect width="425" height="122" rx="12" fill="url(#cardbg)" stroke="#CFE6D8" stroke-width="1.2"/>
+      <rect x="1" y="1" width="423" height="2" rx="1" fill="url(#runner)"/>
+      <circle class="dot d2" cx="24" cy="30" r="5" fill="#34D399"/>
+      <text class="mono nm" x="40" y="35">PlannerAgent</text>
+      <text class="sans ds" x="24" y="60">LLM tabanlı otonom planlama ajanı —</text>
+      <text class="sans ds" x="24" y="78">görev ayrıştırma ve araç kullanımı.</text>
+      <g class="mono tg">
+        <rect x="24" y="90" width="58" height="21" rx="10" fill="#0E9F6E" fill-opacity=".13" stroke="#0E9F6E" stroke-opacity=".45"/><text x="53" y="105" text-anchor="middle">Python</text>
+        <rect x="90" y="90" width="86" height="21" rx="10" fill="#065F46" fill-opacity=".22" stroke="#065F46" stroke-opacity=".6"/><text x="133" y="105" text-anchor="middle">LLM Agents</text>
+        <rect x="184" y="90" width="58" height="21" rx="10" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".4"/><text x="213" y="105" text-anchor="middle">FastAPI</text>
+      </g>
+    </g></g>
+
+    <!-- 3: ArnavutkoyCBS -->
+    <g transform="translate(40,230)"><g class="card k3">
+      <rect width="425" height="122" rx="12" fill="url(#cardbg)" stroke="#CFE6D8" stroke-width="1.2"/>
+      <rect x="1" y="1" width="423" height="2" rx="1" fill="url(#runner)"/>
+      <circle class="dot d3" cx="24" cy="30" r="5" fill="#065F46"/>
+      <text class="mono nm" x="40" y="35">ArnavutkoyCBS</text>
+      <text class="sans ds" x="24" y="60">Belediye için coğrafi bilgi sistemi —</text>
+      <text class="sans ds" x="24" y="78">harita katmanları ve parsel sorgulama.</text>
+      <g class="mono tg">
+        <rect x="24" y="90" width="78" height="21" rx="10" fill="#0E9F6E" fill-opacity=".13" stroke="#0E9F6E" stroke-opacity=".45"/><text x="63" y="105" text-anchor="middle">TypeScript</text>
+        <rect x="110" y="90" width="52" height="21" rx="10" fill="#065F46" fill-opacity=".22" stroke="#065F46" stroke-opacity=".6"/><text x="136" y="105" text-anchor="middle">React</text>
+        <rect x="170" y="90" width="78" height="21" rx="10" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".4"/><text x="209" y="105" text-anchor="middle">Leaflet/GIS</text>
+      </g>
+    </g></g>
+
+    <!-- 4: StockPredictions -->
+    <g transform="translate(495,230)"><g class="card k4">
+      <rect width="425" height="122" rx="12" fill="url(#cardbg)" stroke="#CFE6D8" stroke-width="1.2"/>
+      <rect x="1" y="1" width="423" height="2" rx="1" fill="url(#runner)"/>
+      <circle class="dot d4" cx="24" cy="30" r="5" fill="#0E9F6E"/>
+      <text class="mono nm" x="40" y="35">StockPredictions</text>
+      <text class="sans ds" x="24" y="60">Zaman serisi modelleriyle hisse fiyat</text>
+      <text class="sans ds" x="24" y="78">tahmini ve görselleştirme.</text>
+      <g class="mono tg">
+        <rect x="24" y="90" width="58" height="21" rx="10" fill="#0E9F6E" fill-opacity=".13" stroke="#0E9F6E" stroke-opacity=".45"/><text x="53" y="105" text-anchor="middle">Python</text>
+        <rect x="90" y="90" width="52" height="21" rx="10" fill="#065F46" fill-opacity=".22" stroke="#065F46" stroke-opacity=".6"/><text x="116" y="105" text-anchor="middle">Keras</text>
+        <rect x="150" y="90" width="60" height="21" rx="10" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".4"/><text x="180" y="105" text-anchor="middle">Pandas</text>
+      </g>
+    </g></g>
+
+    <!-- 5: AIContentPlatform -->
+    <g transform="translate(40,368)"><g class="card k5">
+      <rect width="425" height="122" rx="12" fill="url(#cardbg)" stroke="#CFE6D8" stroke-width="1.2"/>
+      <rect x="1" y="1" width="423" height="2" rx="1" fill="url(#runner)"/>
+      <circle class="dot d5" cx="24" cy="30" r="5" fill="#34D399"/>
+      <text class="mono nm" x="40" y="35">AIContentPlatform</text>
+      <text class="sans ds" x="24" y="60">Yapay zekâ ile içerik üretim ve</text>
+      <text class="sans ds" x="24" y="78">yayın planlama platformu.</text>
+      <g class="mono tg">
+        <rect x="24" y="90" width="82" height="21" rx="10" fill="#0E9F6E" fill-opacity=".13" stroke="#0E9F6E" stroke-opacity=".45"/><text x="65" y="105" text-anchor="middle">JavaScript</text>
+        <rect x="114" y="90" width="60" height="21" rx="10" fill="#065F46" fill-opacity=".22" stroke="#065F46" stroke-opacity=".6"/><text x="144" y="105" text-anchor="middle">Node.js</text>
+        <rect x="182" y="90" width="76" height="21" rx="10" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".4"/><text x="220" y="105" text-anchor="middle">OpenAI API</text>
+      </g>
+    </g></g>
+
+    <!-- 6: Sportify -->
+    <g transform="translate(495,368)"><g class="card k6">
+      <rect width="425" height="122" rx="12" fill="url(#cardbg)" stroke="#CFE6D8" stroke-width="1.2"/>
+      <rect x="1" y="1" width="423" height="2" rx="1" fill="url(#runner)"/>
+      <circle class="dot d6" cx="24" cy="30" r="5" fill="#065F46"/>
+      <text class="mono nm" x="40" y="35">Sportify</text>
+      <text class="sans ds" x="24" y="60">Spor salonu yönetim ve randevu</text>
+      <text class="sans ds" x="24" y="78">sistemi — üyelik, ders ve takvim.</text>
+      <g class="mono tg">
+        <rect x="24" y="90" width="72" height="21" rx="10" fill="#0E9F6E" fill-opacity=".13" stroke="#0E9F6E" stroke-opacity=".45"/><text x="60" y="105" text-anchor="middle">HTML/CSS</text>
+        <rect x="104" y="90" width="46" height="21" rx="10" fill="#065F46" fill-opacity=".22" stroke="#065F46" stroke-opacity=".6"/><text x="127" y="105" text-anchor="middle">PHP</text>
+        <rect x="158" y="90" width="56" height="21" rx="10" fill="#34D399" fill-opacity=".12" stroke="#34D399" stroke-opacity=".4"/><text x="186" y="105" text-anchor="middle">MySQL</text>
+      </g>
+    </g></g>
+
+    <rect width="960" height="500" rx="18" fill="none" stroke="#CFE6D8" stroke-width="1.5"/>
+  </g>
+</svg>
