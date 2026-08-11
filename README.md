@@ -1,13 +1,22 @@
 <!--
-  ═══════════════════════════════════════════════════════════════
-   TEMA: GitHub'in koyu temasinda SIYAH + KIRMIZI,
-         acik temasinda BEYAZ + YESIL palet gosterilir.
-   Mekanizma: <picture> + (prefers-color-scheme) — her gorselin
-   -dark ve -light varyanti assets/ altinda durur.
-  ═══════════════════════════════════════════════════════════════
+  ═══════════════════════════════════════════════════════════════════════
+   TEMA: GitHub koyu temada  → SIYAH + KIRMIZI
+         GitHub acik temada  → BEYAZ + YESIL
+   Mekanizma: <picture> + (prefers-color-scheme). Her gorselin -dark ve
+   -light varyanti assets/ altinda durur.
+
+   VERI KAYNAGI NOTU:
+   github-readme-stats (503) ve github-profile-trophy (402) paylasimli
+   servisleri coktugu icin cikarildi. Yerlerine kendi repomuzda uretilen
+   gorseller kullaniliyor:
+     - assets/metrics/*      -> .github/workflows/metrics.yml
+     - output dali           -> .github/workflows/contribution-games.yml
+     - profile-3d-contrib/   -> .github/workflows/profile-3d.yml
+     - assets/*.svg          -> elle yazilmis animasyonlu grafikler
+  ═══════════════════════════════════════════════════════════════════════
 -->
 
-<!-- ═══════════════════════ HERO ═══════════════════════ -->
+<!-- ══════════════════════════ HERO ══════════════════════════ -->
 <div align="center">
 
 <picture>
@@ -37,7 +46,7 @@
 
 </div>
 
-<!-- ═══════════════════════ TERMİNAL ═══════════════════════ -->
+<!-- ══════════════════════════ TERMINAL ══════════════════════════ -->
 <div align="center">
 
 <picture>
@@ -50,10 +59,14 @@
 
 <br/>
 
-<!-- ═══════════════════════ HAKKIMDA ═══════════════════════ -->
+<!-- ══════════════════════════ HAKKIMDA ══════════════════════════ -->
 ## <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="28"/> Hakkımda
 
-<img align="right" width="270" src="assets/ascii-portrait.gif" alt="ASCII portre animasyonu"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/portrait-dark.gif"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/portrait-light.gif"/>
+  <img align="right" width="260" src="assets/portrait-light.gif" alt="ASCII portre animasyonu"/>
+</picture>
 
 ```txt
 Öğrenmek sonu olmayan bir okyanus;
@@ -65,6 +78,7 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 - 🔭 Şu an **MangaStudio-Pro** (AI destekli çizim/manga üretim aracı) ve **PlannerAgent** (LLM tabanlı planlama ajanı) üzerinde çalışıyorum
 - 🌱 **LLM ajanları, system design ve clean architecture** öğreniyorum
 - 🧩 30+ public repo: web, mobil, yapay zekâ, CBS ve sistem programlama
+- 🏅 GitHub başarımlarım: **Galaxy Brain · Pair Extraordinaire · Quickdraw · YOLO**
 - 👯 **Yapay zekâ ürünleri, full-stack SaaS ve açık kaynak** projelerde iş birliğine açığım
 - 💬 Bana **React/Next.js, Node.js, .NET, Flutter, Python ve AI entegrasyonları** hakkında soru sorabilirsin
 - ⚡ Eğlenceli gerçek: kod yazarken kahve tüketimim gözle görülür şekilde artar ☕
@@ -73,7 +87,7 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 ---
 
-<!-- ═══════════════════════ YETENEKLER ═══════════════════════ -->
+<!-- ══════════════════════════ YETENEKLER ══════════════════════════ -->
 ## <img src="https://media.giphy.com/media/iY8CRBdQXODJSCERIr/giphy.gif" width="28"/> Yetenek Matrisi
 
 <div align="center">
@@ -109,7 +123,7 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 **DevOps & Araçlar**
 
-![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white) ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visualstudiocode&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Kubernetes](https://img.shields.io/badge/kubernetes-%23326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white) ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white) ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white) ![GitLab](https://img.shields.io/badge/gitlab-%23181717.svg?style=for-the-badge&logo=gitlab&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![ESLint](https://img.shields.io/badge/ESLint-4B3263?style=for-the-badge&logo=eslint&logoColor=white) ![NPM](https://img.shields.io/badge/NPM-%23CB3837.svg?style=for-the-badge&logo=npm&logoColor=white) ![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white) ![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black) ![Apache](https://img.shields.io/badge/apache-%23D42029.svg?style=for-the-badge&logo=apache&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![VSCode](https://img.shields.io/badge/VSCode-0078D4?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 
 **AI / Data**
 
@@ -129,37 +143,26 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 ---
 
-<!-- ═══════════════════════ PROJELER ═══════════════════════ -->
+<!-- ══════════════════════════ PROJELER ══════════════════════════ -->
 ## <img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="28"/> Öne Çıkan Projeler
 
 <div align="center">
 
-<a href="https://github.com/OFThub/MangaStudio-Pro"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=MangaStudio-Pro&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=MangaStudio-Pro&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="MangaStudio-Pro"/>
-</picture></a>
-<a href="https://github.com/OFThub/PlannerAgent"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=PlannerAgent&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=PlannerAgent&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="PlannerAgent"/>
-</picture></a>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/projects-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/projects-light.svg"/>
+  <img src="assets/projects-light.svg" width="96%" alt="Öne çıkan projeler"/>
+</picture>
 
-<a href="https://github.com/OFThub/ArnavutkoyCBS"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=ArnavutkoyCBS&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=ArnavutkoyCBS&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="ArnavutkoyCBS"/>
-</picture></a>
-<a href="https://github.com/OFThub/StockPredictions"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=StockPredictions&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=StockPredictions&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="StockPredictions"/>
-</picture></a>
+<br/>
 
-<a href="https://github.com/OFThub/AIContentPlatform"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=AIContentPlatform&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=AIContentPlatform&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="AIContentPlatform"/>
-</picture></a>
-<a href="https://github.com/OFThub/Sportify"><picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=Sportify&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&border_color=3A1620"/>
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=OFThub&repo=Sportify&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&border_color=CFE6D8" width="49%" alt="Sportify"/>
-</picture></a>
+<a href="https://github.com/OFThub/MangaStudio-Pro"><img src="https://img.shields.io/badge/MangaStudio--Pro-24292F?style=for-the-badge&logo=github&logoColor=white" alt="MangaStudio-Pro"/></a>
+<a href="https://github.com/OFThub/PlannerAgent"><img src="https://img.shields.io/badge/PlannerAgent-24292F?style=for-the-badge&logo=github&logoColor=white" alt="PlannerAgent"/></a>
+<a href="https://github.com/OFThub/ArnavutkoyCBS"><img src="https://img.shields.io/badge/ArnavutkoyCBS-24292F?style=for-the-badge&logo=github&logoColor=white" alt="ArnavutkoyCBS"/></a>
+<br/>
+<a href="https://github.com/OFThub/StockPredictions"><img src="https://img.shields.io/badge/StockPredictions-24292F?style=for-the-badge&logo=github&logoColor=white" alt="StockPredictions"/></a>
+<a href="https://github.com/OFThub/AIContentPlatform"><img src="https://img.shields.io/badge/AIContentPlatform-24292F?style=for-the-badge&logo=github&logoColor=white" alt="AIContentPlatform"/></a>
+<a href="https://github.com/OFThub/Sportify"><img src="https://img.shields.io/badge/Sportify-24292F?style=for-the-badge&logo=github&logoColor=white" alt="Sportify"/></a>
 
 </div>
 
@@ -181,61 +184,140 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 
 ---
 
-<!-- ═══════════════════════ İSTATİSTİKLER ═══════════════════════ -->
+<!-- ══════════════════════════ BASARIMLAR & DILLER ══════════════════════════ -->
+## <img src="https://media.giphy.com/media/QssGEmpkyEOhBCb7e1/giphy.gif" width="28"/> Başarımlar & Diller
+
+<div align="center">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/badges-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/badges-light.svg"/>
+  <img src="assets/badges-light.svg" width="96%" alt="GitHub başarımları ve dil dağılımı"/>
+</picture>
+
+</div>
+
+---
+
+<!-- ══════════════════════════ ISTATISTIKLER ══════════════════════════ -->
 ## <img src="https://media.giphy.com/media/dWesBcTLavkZuG35MI/giphy.gif" width="28"/> GitHub İstatistikleri
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=OFThub&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=0D1117&title_color=FF2E45&icon_color=FF6B7A&text_color=C9D1D9&ring_color=FF2E45"/>
-  <img src="https://github-readme-stats.vercel.app/api?username=OFThub&show_icons=true&count_private=true&include_all_commits=true&hide_border=true&bg_color=FFFFFF&title_color=0E9F6E&icon_color=34D399&text_color=24292F&ring_color=0E9F6E" width="49%" alt="GitHub istatistikleri"/>
-</picture>
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api/top-langs/?username=OFThub&layout=compact&langs_count=10&hide_border=true&bg_color=0D1117&title_color=FF2E45&text_color=C9D1D9"/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=OFThub&layout=compact&langs_count=10&hide_border=true&bg_color=FFFFFF&title_color=0E9F6E&text_color=24292F" width="41%" alt="En çok kullanılan diller"/>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics/stats-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/metrics/stats-light.svg"/>
+  <img src="assets/metrics/stats-light.svg" width="72%" alt="GitHub istatistikleri"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=0D1117&stroke=3A1620&ring=FF2E45&fire=FF6B7A&currStreakLabel=FF2E45&sideLabels=C9D1D9&dates=8A7680&currStreakNum=FFFFFF&sideNums=FFFFFF"/>
-  <img src="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=FFFFFF&stroke=CFE6D8&ring=0E9F6E&fire=34D399&currStreakLabel=0E9F6E&sideLabels=24292F&dates=5E7A6C&currStreakNum=0B2318&sideNums=0B2318" width="91%" alt="Commit serisi"/>
+  <img src="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=FFFFFF&stroke=CFE6D8&ring=0E9F6E&fire=34D399&currStreakLabel=0E9F6E&sideLabels=24292F&dates=5E7A6C&currStreakNum=0B2318&sideNums=0B2318" width="90%" alt="Commit serisi"/>
 </picture>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&bg_color=0D1117&color=E6EDF7&line=FF2E45&point=FF6B7A&area=true&area_color=B00020&hide_border=true&custom_title=Katki%20Grafigi"/>
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&bg_color=FFFFFF&color=0B2318&line=0E9F6E&point=065F46&area=true&area_color=34D399&hide_border=true&custom_title=Katki%20Grafigi" width="91%" alt="Katkı grafiği"/>
-</picture>
-
-</div>
-
-### 🏆 Kupalar
-
-<div align="center">
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github-profile-trophy.vercel.app/?username=OFThub&theme=darkhub&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6"/>
-  <img src="https://github-profile-trophy.vercel.app/?username=OFThub&theme=flat&no-frame=true&no-bg=true&column=7&margin-w=6&margin-h=6" width="97%" alt="GitHub kupaları"/>
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=OFThub&bg_color=FFFFFF&color=0B2318&line=0E9F6E&point=065F46&area=true&area_color=34D399&hide_border=true&custom_title=Katki%20Grafigi" width="90%" alt="Katkı grafiği"/>
 </picture>
 
 </div>
 
 ---
 
-<!-- ═══════════════════════ YILAN ═══════════════════════ -->
-## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="28"/> Commit Geçmişi
+<!-- ══════════════════════════ COMMIT ARCADE ══════════════════════════ -->
+## <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="28"/> Commit Arcade
+
+> Katkı grafiğim bir arcade salonuna dönüşüyor. Aşağıdaki animasyonların hepsi
+> **gerçek commit geçmişimden** üretiliyor ve günde birkaç kez otomatik tazeleniyor.
 
 <div align="center">
+
+### 🎰 Tetris &nbsp;·&nbsp; Build Pipeline
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/commit-arcade-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/commit-arcade-light.svg"/>
+  <img src="assets/commit-arcade-light.svg" width="96%" alt="Tetris ve yükleme animasyonu"/>
+</picture>
+
+### 🐍 Snake
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake-dark.svg"/>
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg"/>
-  <img alt="Commit geçmişimi yiyen yılan animasyonu" src="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg" width="100%"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/github-contribution-grid-snake.svg" width="100%" alt="Commit geçmişimi yiyen yılan"/>
+</picture>
+
+### 👻 Pac-Man
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman.svg" width="100%" alt="Pac-Man katkı grafiği"/>
+</picture>
+
+### 🧱 Breakout
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout.svg" width="100%" alt="Breakout katkı grafiği"/>
+</picture>
+
+### 💣 Bomberman
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman.svg" width="100%" alt="Bomberman katkı grafiği"/>
+</picture>
+
+### 💥 Minesweeper
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/minesweeper-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/minesweeper.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/minesweeper.svg" width="100%" alt="Minesweeper katkı grafiği"/>
+</picture>
+
+### 🫧 Puzzle Bobble
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble.svg" width="100%" alt="Puzzle Bobble katkı grafiği"/>
+</picture>
+
+### 🚀 Galaga
+
+<img src="https://raw.githubusercontent.com/OFThub/OFThub/output/galaga.svg" width="100%" alt="Galaga katkı grafiği"/>
+
+### 🧊 İzometrik 3D Katkı Grafiği
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="profile-3d-contrib/profile-night-view.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="profile-3d-contrib/profile-green-animate.svg"/>
+  <img src="profile-3d-contrib/profile-green-animate.svg" width="100%" alt="3D katkı grafiği"/>
+</picture>
+
+### 🌗 Gece Görüşü &nbsp;·&nbsp; Mevsimsel
+
+<img src="profile-3d-contrib/profile-night-rainbow.svg" width="49%" alt="Gece görüşü"/>
+<img src="profile-3d-contrib/profile-season-animate.svg" width="49%" alt="Mevsimsel katkı grafiği"/>
+
+### 📅 İzometrik Takvim
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics/calendar-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/metrics/calendar-light.svg"/>
+  <img src="assets/metrics/calendar-light.svg" width="62%" alt="İzometrik katkı takvimi"/>
 </picture>
 
 </div>
 
 ---
 
-<!-- ═══════════════════════ İLETİŞİM ═══════════════════════ -->
+<!-- ══════════════════════════ ILETISIM ══════════════════════════ -->
 ## <img src="https://media.giphy.com/media/mGcNjsfWAjY5AEZNw6/giphy.gif" width="28"/> Birlikte Çalışalım
 
 <div align="center">

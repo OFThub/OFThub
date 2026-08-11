@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 440" width="960" height="440" role="img" aria-label="GitHub basarimlari ve dil dagilimi">
+  <title>Achievements &amp; Languages</title>
+  <defs>
+    <linearGradient id="bbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFFFFF"/><stop offset="100%" stop-color="#F2FAF5"/>
+    </linearGradient>
+    <linearGradient id="bhair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0E9F6E" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#0E9F6E"/>
+      <stop offset="70%" stop-color="#065F46"/>
+      <stop offset="100%" stop-color="#34D399" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="medal">
+      <stop offset="0%" stop-color="#34D399" stop-opacity=".38"/>
+      <stop offset="70%" stop-color="#0E9F6E" stop-opacity=".12"/>
+      <stop offset="100%" stop-color="#0E9F6E" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="lfill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#065F46"/><stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+    <linearGradient id="lsheen" x1="0" y1="0" x2="1" y2="0" spreadMethod="repeat">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#fff" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#fff" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="3s" repeatCount="indefinite"/>
+    </linearGradient>
+    <clipPath id="bcard"><rect width="960" height="440" rx="18"/></clipPath>
+    <filter id="bglw" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family:"JetBrains Mono","SF Mono","Consolas",monospace; }
+      .sans { font-family:"Segoe UI",Inter,-apple-system,Helvetica,Arial,sans-serif; }
+      .hd  { fill:#062B1D; font-size:18px; font-weight:700; letter-spacing:3.2px; }
+      .sm  { fill:#6E8A7B; font-size:12px; }
+      .an  { fill:#0B2318; font-size:13px; font-weight:700; }
+      .ad  { fill:#5E7A6C; font-size:10.5px; }
+      .ln  { fill:#0B2318; font-size:13px; }
+      .lp  { fill:#5E7A6C; font-size:12px; }
+
+      @keyframes popIn  { 0% { opacity:0; transform: translateY(16px); } 100% { opacity:1; transform: translateY(0); } }
+      @keyframes spin   { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+      @keyframes halo   { 0%,100% { opacity:.35; } 50% { opacity:1; } }
+      @keyframes grow   { 0% { transform: scaleX(0); } 18% { transform: scaleX(1); } 88% { transform: scaleX(1); } 96%,100% { transform: scaleX(0); } }
+      @keyframes fadeUp { 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
+      @keyframes pulse  { 0%,100% { opacity:.4; } 50% { opacity:1; } }
+
+      .in   { animation: fadeUp .7s ease both; }
+      .dot  { animation: pulse 2.6s ease-in-out infinite; }
+      .medal{ animation: popIn .8s cubic-bezier(.2,.85,.25,1) both; }
+      .m1{animation-delay:.10s} .m2{animation-delay:.26s} .m3{animation-delay:.42s} .m4{animation-delay:.58s}
+      .ring { animation: spin 14s linear infinite; transform-box: fill-box; transform-origin: center; }
+      .glow { animation: halo 3s ease-in-out infinite; }
+      .g2{animation-delay:.5s} .g3{animation-delay:1s} .g4{animation-delay:1.5s}
+      .bar  { transform-origin: 300px 0; animation: grow 11s cubic-bezier(.2,.85,.25,1) infinite; }
+      .b1{animation-delay:0s} .b2{animation-delay:.12s} .b3{animation-delay:.24s}
+      .b4{animation-delay:.36s} .b5{animation-delay:.48s}
+    </style>
+  </defs>
+
+  <g clip-path="url(#bcard)">
+    <rect width="960" height="440" fill="url(#bbg)"/>
+    <rect width="960" height="2.5" fill="url(#bhair)"/>
+
+    <g class="in">
+      <circle class="dot" cx="42" cy="45" r="4.5" fill="#0E9F6E"/>
+      <text class="sans hd" x="58" y="51">ACHIEVEMENTS</text>
+      <text class="mono sm" x="920" y="50" text-anchor="end">// github.com/OFThub</text>
+    </g>
+    <rect x="40" y="66" width="880" height="1" fill="#D4E7DB"/>
+
+    <!-- ══════ GERCEK GITHUB BASARIMLARI ══════ -->
+    <!-- Galaxy Brain -->
+    <g transform="translate(150,150)"><g class="medal m1">
+      <circle class="glow" r="52" fill="url(#medal)"/>
+      <circle class="ring" r="40" fill="none" stroke="#0E9F6E" stroke-width="1.6"
+              stroke-dasharray="14 8" opacity=".75"/>
+      <circle r="31" fill="#FFFFFF" stroke="#0E9F6E" stroke-opacity=".55" stroke-width="1.4"/>
+      <path transform="translate(-14,-14) scale(1.17)" filter="url(#bglw)" fill="#34D399"
+            d="M12 1.6 l2.7 6.9 7.3 .5 -5.6 4.7 1.8 7.1 -6.2 -3.9 -6.2 3.9 1.8 -7.1 -5.6 -4.7 7.3 -.5 Z"/>
+      <text class="sans an" y="58" text-anchor="middle">Galaxy Brain</text>
+      <text class="mono ad" y="74" text-anchor="middle">kabul edilen cevaplar</text>
+    </g></g>
+
+    <!-- Pair Extraordinaire -->
+    <g transform="translate(370,150)"><g class="medal m2">
+      <circle class="glow g2" r="52" fill="url(#medal)"/>
+      <circle class="ring" r="40" fill="none" stroke="#34D399" stroke-width="1.6"
+              stroke-dasharray="14 8" opacity=".75" style="animation-duration:18s"/>
+      <circle r="31" fill="#FFFFFF" stroke="#34D399" stroke-opacity=".55" stroke-width="1.4"/>
+      <g filter="url(#bglw)" fill="none" stroke="#34D399" stroke-width="3">
+        <circle cx="-7" cy="0" r="9"/><circle cx="7" cy="0" r="9"/>
+      </g>
+      <text class="sans an" y="58" text-anchor="middle">Pair Extraordinaire</text>
+      <text class="mono ad" y="74" text-anchor="middle">ortak yazarli commit</text>
+    </g></g>
+
+    <!-- Quickdraw -->
+    <g transform="translate(590,150)"><g class="medal m3">
+      <circle class="glow g3" r="52" fill="url(#medal)"/>
+      <circle class="ring" r="40" fill="none" stroke="#0E9F6E" stroke-width="1.6"
+              stroke-dasharray="14 8" opacity=".75" style="animation-duration:11s"/>
+      <circle r="31" fill="#FFFFFF" stroke="#0E9F6E" stroke-opacity=".55" stroke-width="1.4"/>
+      <path transform="translate(-12,-14) scale(1.17)" filter="url(#bglw)" fill="#0E9F6E"
+            d="M13 1 L3 14 h7 l-1 9 10 -13 h-7 Z"/>
+      <text class="sans an" y="58" text-anchor="middle">Quickdraw</text>
+      <text class="mono ad" y="74" text-anchor="middle">5 dakikada kapatildi</text>
+    </g></g>
+
+    <!-- YOLO -->
+    <g transform="translate(810,150)"><g class="medal m4">
+      <circle class="glow g4" r="52" fill="url(#medal)"/>
+      <circle class="ring" r="40" fill="none" stroke="#065F46" stroke-width="1.6"
+              stroke-dasharray="14 8" opacity=".85" style="animation-duration:9s"/>
+      <circle r="31" fill="#FFFFFF" stroke="#065F46" stroke-opacity=".75" stroke-width="1.4"/>
+      <g filter="url(#bglw)" fill="#34D399">
+        <path d="M0 -16 c7 6 10 13 10 19 a10 10 0 0 1 -20 0 c0 -6 3 -13 10 -19 Z"/>
+        <circle cx="0" cy="4" r="4.5" fill="#FFFFFF"/>
+      </g>
+      <text class="sans an" y="58" text-anchor="middle">YOLO</text>
+      <text class="mono ad" y="74" text-anchor="middle">incelemesiz merge</text>
+    </g></g>
+
+    <!-- ══════ DIL DAGILIMI ══════ -->
+    <g class="in" style="animation-delay:.3s">
+      <circle class="dot" cx="42" cy="266" r="4.5" fill="#34D399"/>
+      <text class="sans hd" x="58" y="272">MOST USED LANGUAGES</text>
+      <text class="mono sm" x="920" y="271" text-anchor="end">// 29 public repo</text>
+    </g>
+    <rect x="40" y="286" width="880" height="1" fill="#D4E7DB"/>
+
+    <g class="mono">
+      <text class="ln" x="40" y="316">JavaScript</text>
+      <text class="lp" x="270" y="316" text-anchor="end">31%</text>
+      <rect x="300" y="306" width="580" height="10" rx="5" fill="#DCEDE3"/>
+      <g class="bar b1"><rect x="300" y="306" width="180" height="10" rx="5" fill="url(#lfill)"/><rect x="300" y="306" width="180" height="10" rx="5" fill="url(#lsheen)"/></g>
+      <text class="lp" x="920" y="316" text-anchor="end">9 repo</text>
+
+      <text class="ln" x="40" y="342">TypeScript</text>
+      <text class="lp" x="270" y="342" text-anchor="end">28%</text>
+      <rect x="300" y="332" width="580" height="10" rx="5" fill="#DCEDE3"/>
+      <g class="bar b2"><rect x="300" y="332" width="162" height="10" rx="5" fill="url(#lfill)"/><rect x="300" y="332" width="162" height="10" rx="5" fill="url(#lsheen)"/></g>
+      <text class="lp" x="920" y="342" text-anchor="end">8 repo</text>
+
+      <text class="ln" x="40" y="368">Python</text>
+      <text class="lp" x="270" y="368" text-anchor="end">24%</text>
+      <rect x="300" y="358" width="580" height="10" rx="5" fill="#DCEDE3"/>
+      <g class="bar b3"><rect x="300" y="358" width="140" height="10" rx="5" fill="url(#lfill)"/><rect x="300" y="358" width="140" height="10" rx="5" fill="url(#lsheen)"/></g>
+      <text class="lp" x="920" y="368" text-anchor="end">7 repo</text>
+
+      <text class="ln" x="40" y="394">C / C++</text>
+      <text class="lp" x="270" y="394" text-anchor="end">7%</text>
+      <rect x="300" y="384" width="580" height="10" rx="5" fill="#DCEDE3"/>
+      <g class="bar b4"><rect x="300" y="384" width="41" height="10" rx="5" fill="url(#lfill)"/><rect x="300" y="384" width="41" height="10" rx="5" fill="url(#lsheen)"/></g>
+      <text class="lp" x="920" y="394" text-anchor="end">2 repo</text>
+
+      <text class="ln" x="40" y="420">HTML / CSS</text>
+      <text class="lp" x="270" y="420" text-anchor="end">7%</text>
+      <rect x="300" y="410" width="580" height="10" rx="5" fill="#DCEDE3"/>
+      <g class="bar b5"><rect x="300" y="410" width="41" height="10" rx="5" fill="url(#lfill)"/><rect x="300" y="410" width="41" height="10" rx="5" fill="url(#lsheen)"/></g>
+      <text class="lp" x="920" y="420" text-anchor="end">2 repo</text>
+    </g>
+
+    <rect width="960" height="440" rx="18" fill="none" stroke="#CFE6D8" stroke-width="1.5"/>
+  </g>
+</svg>
