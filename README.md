@@ -205,12 +205,6 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/metrics/stats-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="assets/metrics/stats-light.svg"/>
-  <img src="assets/metrics/stats-light.svg" width="72%" alt="GitHub istatistikleri"/>
-</picture>
-
-<picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=0D1117&stroke=3A1620&ring=FF2E45&fire=FF6B7A&currStreakLabel=FF2E45&sideLabels=C9D1D9&dates=8A7680&currStreakNum=FFFFFF&sideNums=FFFFFF"/>
   <img src="https://streak-stats.demolab.com?user=OFThub&hide_border=true&background=FFFFFF&stroke=CFE6D8&ring=0E9F6E&fire=34D399&currStreakLabel=0E9F6E&sideLabels=24292F&dates=5E7A6C&currStreakNum=0B2318&sideNums=0B2318" width="90%" alt="Commit serisi"/>
 </picture>
