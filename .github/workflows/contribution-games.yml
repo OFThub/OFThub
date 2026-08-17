@@ -20,11 +20,13 @@ jobs:
 
     steps:
       # Once arcade oyunlari: dist/ klasorunu bu adim olusturur.
-      - name: arcade games (pacman, breakout, galaga, minesweeper, puzzle-bobble, bomberman)
+      # minesweeper action'in demo listesinde var ama uretilmiyor (output dalinda
+      # dosyasi olusmadi), o yuzden istenmiyor - yoksa README'de 404 gorsel kalir.
+      - name: arcade games (pacman, breakout, galaga, puzzle-bobble, bomberman)
         uses: abozanona/pacman-contribution-graph@v5.0.0
         with:
           github_user_name: ${{ github.repository_owner }}
-          games: 'pacman,breakout,galaga,minesweeper,puzzle-bobble,bomberman'
+          games: 'pacman,breakout,galaga,puzzle-bobble,bomberman'
           player_style: 'aggressive'
           hide_month_labels: 'false'
 

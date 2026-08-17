@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 470" width="960" height="470" role="img" aria-label="Git graph ve space invaders animasyonu">
+  <title>Git Flow &amp; Bug Invaders</title>
+  <defs>
+    <linearGradient id="q1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#06070A"/><stop offset="100%" stop-color="#100609"/>
+    </linearGradient>
+    <linearGradient id="qhair" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#FF2E45" stop-opacity="0"/>
+      <stop offset="35%" stop-color="#FF2E45"/>
+      <stop offset="70%" stop-color="#B00020"/>
+      <stop offset="100%" stop-color="#FF6B7A" stop-opacity="0"/>
+    </linearGradient>
+    <clipPath id="qcard"><rect width="960" height="470" rx="18"/></clipPath>
+    <filter id="qglw" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .mono { font-family:"JetBrains Mono","SF Mono","Consolas",monospace; }
+      .sans { font-family:"Segoe UI",Inter,-apple-system,Helvetica,Arial,sans-serif; }
+      .hd  { fill:#FBF6F7; font-size:18px; font-weight:700; letter-spacing:3.2px; }
+      .sm  { fill:#8A7680; font-size:12px; }
+      .br  { font-size:11px; }
+
+      /* ── git graph ── */
+      @keyframes drawLine { 0% { stroke-dashoffset: 900; } 30%,100% { stroke-dashoffset: 0; } }
+      @keyframes nodeIn   { 0%,8% { opacity:0; transform: scale(.2); }
+                            18% { opacity:1; transform: scale(1.35); }
+                            26%,100% { opacity:1; transform: scale(1); } }
+      @keyframes labelIn  { 0%,20% { opacity:0; } 34%,100% { opacity:1; } }
+      /* ── invaders ── */
+      @keyframes marchX   { 0%,100% { transform: translateX(0); } 50% { transform: translateX(56px); } }
+      @keyframes shipX    { 0%,100% { transform: translateX(0); } 50% { transform: translateX(430px); } }
+      @keyframes shot     { 0% { transform: translateY(0); opacity:0; }
+                            6% { opacity:1; }
+                            48% { transform: translateY(-124px); opacity:1; }
+                            52%,100% { transform: translateY(-124px); opacity:0; } }
+      @keyframes hit      { 0%,58% { opacity:1; } 62% { opacity:1; transform: scale(1.5); }
+                            68%,96% { opacity:0; transform: scale(.4); } 100% { opacity:1; transform: scale(1); } }
+      @keyframes pulse    { 0%,100% { opacity:.4; } 50% { opacity:1; } }
+      @keyframes fadeUp   { 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
+
+      .in   { animation: fadeUp .7s ease both; }
+      .dot  { animation: pulse 2.6s ease-in-out infinite; }
+      .line { stroke-dasharray: 900; animation: drawLine 12s ease-out infinite; }
+      .node { animation: nodeIn 12s ease-out infinite; transform-box: fill-box; transform-origin: center; }
+      .lbl  { animation: labelIn 12s ease-out infinite; }
+      .n1{animation-delay:0s}   .n2{animation-delay:.35s} .n3{animation-delay:.7s}
+      .n4{animation-delay:1.05s} .n5{animation-delay:1.4s} .n6{animation-delay:1.75s}
+      .n7{animation-delay:2.1s} .n8{animation-delay:2.45s} .n9{animation-delay:2.8s}
+      .march { animation: marchX 5s steps(4, end) infinite; }
+      .ship  { animation: shipX 9s ease-in-out infinite; }
+      .bolt  { animation: shot 2.2s linear infinite; }
+      .bl2{animation-delay:.7s} .bl3{animation-delay:1.4s}
+      .inv   { animation: hit 9s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+      .i2{animation-delay:.6s} .i3{animation-delay:1.2s} .i4{animation-delay:1.8s}
+      .i5{animation-delay:2.4s} .i6{animation-delay:3s}  .i7{animation-delay:3.6s} .i8{animation-delay:4.2s}
+    </style>
+
+    <!-- uzayli: commit karesi gorunumlu -->
+    <g id="alien">
+      <rect x="-9" y="-7" width="18" height="14" rx="3"/>
+      <rect x="-13" y="-2" width="4" height="8" rx="1.5"/>
+      <rect x="9" y="-2" width="4" height="8" rx="1.5"/>
+    </g>
+  </defs>
+
+  <g clip-path="url(#qcard)">
+    <rect width="960" height="470" fill="url(#q1)"/>
+    <rect width="960" height="2.5" fill="url(#qhair)"/>
+
+    <g class="in">
+      <circle class="dot" cx="42" cy="45" r="4.5" fill="#FF2E45"/>
+      <text class="sans hd" x="58" y="51">GIT FLOW</text>
+      <text class="mono sm" x="920" y="50" text-anchor="end">// branch &#8594; merge &#8594; ship</text>
+    </g>
+    <rect x="40" y="66" width="880" height="1" fill="#2E181F"/>
+
+    <!-- ══════════ GIT GRAPH ══════════ -->
+    <g fill="none" stroke-width="2.5" stroke-linecap="round">
+      <path class="line" d="M70 150 H890" stroke="#FF2E45"/>
+      <path class="line" d="M210 150 C250 150 250 104 290 104 H430 C470 104 470 150 510 150"
+            stroke="#FF6B7A" style="animation-delay:.5s"/>
+      <path class="line" d="M350 150 C390 150 390 196 430 196 H620 C660 196 660 150 700 150"
+            stroke="#B00020" style="animation-delay:1s"/>
+      <path class="line" d="M700 150 C730 150 730 112 760 112 H800 C830 112 830 150 860 150"
+            stroke="#FF6B7A" style="animation-delay:1.6s"/>
+    </g>
+
+    <!-- commit dugumleri -->
+    <g filter="url(#qglw)">
+      <circle class="node n1" cx="70"  cy="150" r="7" fill="#FF2E45"/>
+      <circle class="node n2" cx="210" cy="150" r="7" fill="#FF2E45"/>
+      <circle class="node n3" cx="330" cy="104" r="6" fill="#FF6B7A"/>
+      <circle class="node n4" cx="430" cy="104" r="6" fill="#FF6B7A"/>
+      <circle class="node n5" cx="510" cy="150" r="7" fill="#FF2E45"/>
+      <circle class="node n6" cx="520" cy="196" r="6" fill="#B00020"/>
+      <circle class="node n7" cx="700" cy="150" r="7" fill="#FF2E45"/>
+      <circle class="node n8" cx="790" cy="112" r="6" fill="#FF6B7A"/>
+      <circle class="node n9" cx="890" cy="150" r="8" fill="#FFFFFF"/>
+    </g>
+
+    <!-- dal etiketleri -->
+    <g class="mono br">
+      <text class="lbl n1" x="70"  y="172" fill="#8A7680" text-anchor="middle">init</text>
+      <text class="lbl n3" x="330" y="90"  fill="#FF6B7A" text-anchor="middle">feature/ai</text>
+      <text class="lbl n6" x="520" y="216" fill="#B00020" text-anchor="middle">feature/ui</text>
+      <text class="lbl n8" x="790" y="98"  fill="#FF6B7A" text-anchor="middle">hotfix</text>
+      <text class="lbl n9" x="890" y="176" fill="#F2EFF1" text-anchor="middle">main</text>
+    </g>
+
+    <!-- ══════════ BUG INVADERS ══════════ -->
+    <g class="in" style="animation-delay:.25s">
+      <circle class="dot" cx="42" cy="266" r="4.5" fill="#FF6B7A"/>
+      <text class="sans hd" x="58" y="272">BUG INVADERS</text>
+      <text class="mono sm" x="920" y="271" text-anchor="end">// her bug bir hedef</text>
+    </g>
+    <rect x="40" y="286" width="880" height="1" fill="#2E181F"/>
+
+    <g class="march">
+      <g fill="#FF2E45" filter="url(#qglw)">
+        <g transform="translate(120,318)"><g class="inv"><use href="#alien"/></g></g>
+        <g transform="translate(200,318)"><g class="inv i2"><use href="#alien"/></g></g>
+        <g transform="translate(280,318)"><g class="inv i3"><use href="#alien"/></g></g>
+        <g transform="translate(360,318)"><g class="inv i4"><use href="#alien"/></g></g>
+        <g transform="translate(440,318)"><g class="inv i5"><use href="#alien"/></g></g>
+        <g transform="translate(520,318)"><g class="inv i6"><use href="#alien"/></g></g>
+        <g transform="translate(600,318)"><g class="inv i7"><use href="#alien"/></g></g>
+        <g transform="translate(680,318)"><g class="inv i8"><use href="#alien"/></g></g>
+      </g>
+      <g fill="#B00020" filter="url(#qglw)">
+        <g transform="translate(120,356)"><g class="inv i2"><use href="#alien"/></g></g>
+        <g transform="translate(200,356)"><g class="inv i3"><use href="#alien"/></g></g>
+        <g transform="translate(280,356)"><g class="inv i4"><use href="#alien"/></g></g>
+        <g transform="translate(360,356)"><g class="inv i5"><use href="#alien"/></g></g>
+        <g transform="translate(440,356)"><g class="inv i6"><use href="#alien"/></g></g>
+        <g transform="translate(520,356)"><g class="inv i7"><use href="#alien"/></g></g>
+        <g transform="translate(600,356)"><g class="inv i8"><use href="#alien"/></g></g>
+        <g transform="translate(680,356)"><g class="inv"><use href="#alien"/></g></g>
+      </g>
+    </g>
+
+    <!-- mermiler -->
+    <g fill="#FFFFFF">
+      <rect class="bolt"     x="228" y="404" width="3" height="14" rx="1.5"/>
+      <rect class="bolt bl2" x="468" y="404" width="3" height="14" rx="1.5"/>
+      <rect class="bolt bl3" x="668" y="404" width="3" height="14" rx="1.5"/>
+    </g>
+
+    <!-- gemi: dis <g> animasyon, ic <g> konumlandirma -->
+    <g class="ship">
+      <g transform="translate(220,412)" filter="url(#qglw)">
+        <path d="M-16 12 H16 L12 2 H6 L0 -10 L-6 2 H-12 Z" fill="#FF6B7A"/>
+        <rect x="-2" y="-14" width="4" height="6" rx="2" fill="#FFFFFF"/>
+      </g>
+    </g>
+
+    <rect x="40" y="436" width="880" height="2" rx="1" fill="url(#qhair)"/>
+    <text class="mono sm" x="40" y="458">score: 1 247 commits</text>
+    <text class="mono sm" x="920" y="458" text-anchor="end" fill="#FF6B7A">lives: &#8734;</text>
+
+    <rect width="960" height="470" rx="18" fill="none" stroke="#3A1620" stroke-width="1.5"/>
+  </g>
+</svg>

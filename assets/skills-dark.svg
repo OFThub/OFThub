@@ -1,177 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 430" width="960" height="430" role="img" aria-label="Yetenek matrisi - animasyonlu seviye cubuklari">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 532" width="960" height="532" role="img" aria-label="Kullandigim teknolojiler">
   <title>Skill Matrix</title>
-
   <defs>
-    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0%" stop-color="#06070A"/>
-      <stop offset="100%" stop-color="#100609"/>
-    </linearGradient>
-    <linearGradient id="fill1" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FF2E45"/><stop offset="100%" stop-color="#B00020"/>
-    </linearGradient>
-    <linearGradient id="fill2" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FF6B7A"/><stop offset="100%" stop-color="#8B0F1F"/>
-    </linearGradient>
-    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="0" spreadMethod="repeat">
-      <stop offset="0%"   stop-color="#fff" stop-opacity="0"/>
-      <stop offset="38%"  stop-color="#fff" stop-opacity="0"/>
-      <stop offset="50%"  stop-color="#fff" stop-opacity="0.65"/>
-      <stop offset="62%"  stop-color="#fff" stop-opacity="0"/>
-      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
-      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0" dur="2.8s" repeatCount="indefinite"/>
-    </linearGradient>
-    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0%" stop-color="#FF2E45" stop-opacity="0"/>
-      <stop offset="35%" stop-color="#FF2E45"/>
-      <stop offset="70%" stop-color="#8B0F1F"/>
-      <stop offset="100%" stop-color="#FF6B7A" stop-opacity="0"/>
-    </linearGradient>
-    <clipPath id="scard"><rect width="960" height="430" rx="18"/></clipPath>
-    <filter id="bglow" x="-20%" y="-120%" width="140%" height="340%">
-      <feGaussianBlur stdDeviation="4" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
-    </filter>
-
+    <linearGradient id="sbg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#06070A"/><stop offset="100%" stop-color="#100609"/></linearGradient>
+    <linearGradient id="hair" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#FF2E45" stop-opacity="0"/><stop offset="35%" stop-color="#FF2E45"/><stop offset="70%" stop-color="#B00020"/><stop offset="100%" stop-color="#FF6B7A" stop-opacity="0"/></linearGradient>
+    <clipPath id="scard"><rect width="960" height="532" rx="18"/></clipPath>
     <style>
       .mono { font-family:"JetBrains Mono","SF Mono","Consolas",monospace; }
       .sans { font-family:"Segoe UI",Inter,-apple-system,Helvetica,Arial,sans-serif; }
-      .lbl  { fill:#EDE6E8; font-size:14.5px; }
-      .pct  { fill:#9A8189; font-size:13px; }
-
-      @keyframes grow  { 0% { transform: scaleX(0); } 16% { transform: scaleX(1); } 88% { transform: scaleX(1); } 96%,100% { transform: scaleX(0); } }
-      @keyframes fadeUp{ 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
-      @keyframes pulse { 0%,100% { opacity:.4; } 50% { opacity:1; } }
-
-      .barL { transform-origin: 40px 0;  animation: grow 12s cubic-bezier(.2,.85,.25,1) infinite; }
-      .barR { transform-origin: 520px 0; animation: grow 12s cubic-bezier(.2,.85,.25,1) infinite; }
-      .r1{animation-delay:0s} .r2{animation-delay:.14s} .r3{animation-delay:.28s} .r4{animation-delay:.42s} .r5{animation-delay:.56s}
-      .in  { animation: fadeUp .7s ease both; }
-      .dot { animation: pulse 2.6s ease-in-out infinite; }
+      .hd  { fill:#FBF6F7; font-size:18px; font-weight:700; letter-spacing:3.2px; }
+      .sm  { fill:#8A7680; font-size:12px; }
+      .cat { fill:#FF6B7A; font-size:12.5px; font-weight:700; letter-spacing:1.6px; }
+      .ct  { fill:#FFD3D9; font-size:12px; }
+      @keyframes chipIn { 0% { opacity:0; transform: translateY(10px); } 100% { opacity:1; transform: translateY(0); } }
+      @keyframes pulse  { 0%,100% { opacity:.35; } 50% { opacity:1; } }
+      @keyframes fadeUp { 0% { opacity:0; transform: translateY(8px); } 100% { opacity:1; transform: translateY(0); } }
+      .in   { animation: fadeUp .7s ease both; }
+      .dot  { animation: pulse 2.6s ease-in-out infinite; }
+      .chip { animation: chipIn .55s cubic-bezier(.2,.85,.25,1) both; }
     </style>
   </defs>
-
   <g clip-path="url(#scard)">
-    <rect width="960" height="430" fill="url(#sbg)"/>
-    <rect x="0" y="0" width="960" height="2.5" fill="url(#hair)"/>
-
-    <!-- baslik -->
+    <rect width="960" height="532" fill="url(#sbg)"/>
+    <rect width="960" height="2.5" fill="url(#hair)"/>
     <g class="in">
       <circle class="dot" cx="42" cy="45" r="4.5" fill="#FF2E45"/>
-      <text class="sans" x="58" y="51" font-size="19" font-weight="700" fill="#FBF6F7" letter-spacing="3.5">SKILL MATRIX</text>
-      <text class="mono" x="920" y="50" font-size="12.5" fill="#8A7680" text-anchor="end">// self-assessed · always updating</text>
+      <text class="sans hd" x="58" y="51">SKILL MATRIX</text>
+      <text class="mono sm" x="920" y="50" text-anchor="end">// gunluk kullandigim araclar</text>
     </g>
-    <rect x="40" y="70" width="880" height="1" fill="#1E2A42"/>
-
-    <!-- SOL KOLON -->
-    <g>
-      <g class="in" style="animation-delay:.10s">
-        <text class="mono lbl" x="40" y="112">TypeScript · JavaScript</text>
-        <text class="mono pct" x="420" y="112" text-anchor="end">92%</text>
-        <rect x="40" y="120" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barL r1" filter="url(#bglow)">
-          <rect x="40" y="120" width="350" height="9" rx="4.5" fill="url(#fill1)"/>
-          <rect x="40" y="120" width="350" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.18s">
-        <text class="mono lbl" x="40" y="174">React · Next.js</text>
-        <text class="mono pct" x="420" y="174" text-anchor="end">90%</text>
-        <rect x="40" y="182" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barL r2" filter="url(#bglow)">
-          <rect x="40" y="182" width="342" height="9" rx="4.5" fill="url(#fill1)"/>
-          <rect x="40" y="182" width="342" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.26s">
-        <text class="mono lbl" x="40" y="236">Node.js · NestJS · Express</text>
-        <text class="mono pct" x="420" y="236" text-anchor="end">86%</text>
-        <rect x="40" y="244" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barL r3" filter="url(#bglow)">
-          <rect x="40" y="244" width="327" height="9" rx="4.5" fill="url(#fill1)"/>
-          <rect x="40" y="244" width="327" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.34s">
-        <text class="mono lbl" x="40" y="298">C# · .NET</text>
-        <text class="mono pct" x="420" y="298" text-anchor="end">80%</text>
-        <rect x="40" y="306" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barL r4" filter="url(#bglow)">
-          <rect x="40" y="306" width="304" height="9" rx="4.5" fill="url(#fill1)"/>
-          <rect x="40" y="306" width="304" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.42s">
-        <text class="mono lbl" x="40" y="360">Python · AI / ML</text>
-        <text class="mono pct" x="420" y="360" text-anchor="end">84%</text>
-        <rect x="40" y="368" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barL r5" filter="url(#bglow)">
-          <rect x="40" y="368" width="319" height="9" rx="4.5" fill="url(#fill1)"/>
-          <rect x="40" y="368" width="319" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
+    <rect x="40" y="66" width="880" height="1" fill="#2E181F"/>
+    <!-- FRONTEND -->
+    <g class="in" style="animation-delay:0.00s">
+      <text class="mono cat" x="40" y="134">FRONTEND</text>
+      <rect x="40" y="142" width="132" height="1" fill="#2E181F"/>
     </g>
-
-    <!-- dikey ayirac -->
-    <rect x="470" y="90" width="1" height="300" fill="#2E181F"/>
-
-    <!-- SAG KOLON -->
-    <g>
-      <g class="in" style="animation-delay:.14s">
-        <text class="mono lbl" x="520" y="112">Flutter · Dart</text>
-        <text class="mono pct" x="900" y="112" text-anchor="end">82%</text>
-        <rect x="520" y="120" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barR r1" filter="url(#bglow)">
-          <rect x="520" y="120" width="312" height="9" rx="4.5" fill="url(#fill2)"/>
-          <rect x="520" y="120" width="312" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.22s">
-        <text class="mono lbl" x="520" y="174">PostgreSQL · MongoDB · Redis</text>
-        <text class="mono pct" x="900" y="174" text-anchor="end">85%</text>
-        <rect x="520" y="182" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barR r2" filter="url(#bglow)">
-          <rect x="520" y="182" width="323" height="9" rx="4.5" fill="url(#fill2)"/>
-          <rect x="520" y="182" width="323" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.30s">
-        <text class="mono lbl" x="520" y="236">Docker · CI/CD · Linux</text>
-        <text class="mono pct" x="900" y="236" text-anchor="end">76%</text>
-        <rect x="520" y="244" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barR r3" filter="url(#bglow)">
-          <rect x="520" y="244" width="289" height="9" rx="4.5" fill="url(#fill2)"/>
-          <rect x="520" y="244" width="289" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.38s">
-        <text class="mono lbl" x="520" y="298">UI / UX · Figma · Motion</text>
-        <text class="mono pct" x="900" y="298" text-anchor="end">88%</text>
-        <rect x="520" y="306" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barR r4" filter="url(#bglow)">
-          <rect x="520" y="306" width="334" height="9" rx="4.5" fill="url(#fill2)"/>
-          <rect x="520" y="306" width="334" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
-
-      <g class="in" style="animation-delay:.46s">
-        <text class="mono lbl" x="520" y="360">Git · Clean Architecture</text>
-        <text class="mono pct" x="900" y="360" text-anchor="end">90%</text>
-        <rect x="520" y="368" width="380" height="9" rx="4.5" fill="#24141A"/>
-        <g class="barR r5" filter="url(#bglow)">
-          <rect x="520" y="368" width="342" height="9" rx="4.5" fill="url(#fill2)"/>
-          <rect x="520" y="368" width="342" height="9" rx="4.5" fill="url(#sheen)"/>
-        </g>
-      </g>
+    <g transform="translate(200,96)"><g class="chip" style="animation-delay:0.05s"><rect width="76" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">React</text></g></g>
+    <g transform="translate(285,96)"><g class="chip" style="animation-delay:0.08s"><rect width="91" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Next.js</text></g></g>
+    <g transform="translate(385,96)"><g class="chip" style="animation-delay:0.11s"><rect width="84" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Vue.js</text></g></g>
+    <g transform="translate(478,96)"><g class="chip" style="animation-delay:0.13s"><rect width="112" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">TypeScript</text></g></g>
+    <g transform="translate(599,96)"><g class="chip" style="animation-delay:0.16s"><rect width="112" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">JavaScript</text></g></g>
+    <g transform="translate(720,96)"><g class="chip" style="animation-delay:0.19s"><rect width="98" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Tailwind</text></g></g>
+    <g transform="translate(827,96)"><g class="chip" style="animation-delay:0.22s"><rect width="69" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Vite</text></g></g>
+    <g transform="translate(200,134)"><g class="chip" style="animation-delay:0.25s"><rect width="76" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">HTML5</text></g></g>
+    <g transform="translate(285,134)"><g class="chip" style="animation-delay:0.27s"><rect width="69" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">CSS3</text></g></g>
+    <!-- BACKEND -->
+    <g class="in" style="animation-delay:0.09s">
+      <text class="mono cat" x="40" y="240">BACKEND</text>
+      <rect x="40" y="248" width="132" height="1" fill="#2E181F"/>
     </g>
-
-    <rect width="960" height="430" rx="18" fill="none" stroke="#3A1620" stroke-width="1.5"/>
+    <g transform="translate(200,202)"><g class="chip" style="animation-delay:0.30s"><rect width="91" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Node.js</text></g></g>
+    <g transform="translate(300,202)"><g class="chip" style="animation-delay:0.33s"><rect width="84" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">NestJS</text></g></g>
+    <g transform="translate(393,202)"><g class="chip" style="animation-delay:0.36s"><rect width="91" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Express</text></g></g>
+    <g transform="translate(493,202)"><g class="chip" style="animation-delay:0.39s"><rect width="69" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">.NET</text></g></g>
+    <g transform="translate(571,202)"><g class="chip" style="animation-delay:0.41s"><rect width="54" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">C#</text></g></g>
+    <g transform="translate(634,202)"><g class="chip" style="animation-delay:0.44s"><rect width="69" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Java</text></g></g>
+    <g transform="translate(712,202)"><g class="chip" style="animation-delay:0.47s"><rect width="91" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">GraphQL</text></g></g>
+    <g transform="translate(812,202)"><g class="chip" style="animation-delay:0.50s"><rect width="98" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">REST API</text></g></g>
+    <g transform="translate(200,240)"><g class="chip" style="animation-delay:0.53s"><rect width="62" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">JWT</text></g></g>
+    <!-- MOBIL & AI -->
+    <g class="in" style="animation-delay:0.18s">
+      <text class="mono cat" x="40" y="346">MOBIL &amp; AI</text>
+      <rect x="40" y="354" width="132" height="1" fill="#2E181F"/>
+    </g>
+    <g transform="translate(200,308)"><g class="chip" style="animation-delay:0.55s"><rect width="91" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Flutter</text></g></g>
+    <g transform="translate(300,308)"><g class="chip" style="animation-delay:0.58s"><rect width="69" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Dart</text></g></g>
+    <g transform="translate(378,308)"><g class="chip" style="animation-delay:0.61s"><rect width="127" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">React Native</text></g></g>
+    <g transform="translate(514,308)"><g class="chip" style="animation-delay:0.64s"><rect width="84" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Python</text></g></g>
+    <g transform="translate(607,308)"><g class="chip" style="animation-delay:0.67s"><rect width="112" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">TensorFlow</text></g></g>
+    <g transform="translate(728,308)"><g class="chip" style="animation-delay:0.69s"><rect width="76" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Keras</text></g></g>
+    <g transform="translate(200,346)"><g class="chip" style="animation-delay:0.72s"><rect width="127" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">scikit-learn</text></g></g>
+    <g transform="translate(336,346)"><g class="chip" style="animation-delay:0.75s"><rect width="84" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">OpenCV</text></g></g>
+    <g transform="translate(429,346)"><g class="chip" style="animation-delay:0.78s"><rect width="105" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">LLM / RAG</text></g></g>
+    <!-- VERI & DEVOPS -->
+    <g class="in" style="animation-delay:0.27s">
+      <text class="mono cat" x="40" y="452">VERI &amp; DEVOPS</text>
+      <rect x="40" y="460" width="132" height="1" fill="#2E181F"/>
+    </g>
+    <g transform="translate(200,414)"><g class="chip" style="animation-delay:0.81s"><rect width="112" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">PostgreSQL</text></g></g>
+    <g transform="translate(321,414)"><g class="chip" style="animation-delay:0.83s"><rect width="91" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">MongoDB</text></g></g>
+    <g transform="translate(421,414)"><g class="chip" style="animation-delay:0.86s"><rect width="76" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">MySQL</text></g></g>
+    <g transform="translate(506,414)"><g class="chip" style="animation-delay:0.89s"><rect width="76" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Redis</text></g></g>
+    <g transform="translate(591,414)"><g class="chip" style="animation-delay:0.92s"><rect width="84" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Docker</text></g></g>
+    <g transform="translate(684,414)"><g class="chip" style="animation-delay:0.95s"><rect width="62" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Git</text></g></g>
+    <g transform="translate(755,414)"><g class="chip" style="animation-delay:0.97s"><rect width="142" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">GitHub Actions</text></g></g>
+    <g transform="translate(200,452)"><g class="chip" style="animation-delay:1.00s"><rect width="76" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Linux</text></g></g>
+    <g transform="translate(285,452)"><g class="chip" style="animation-delay:1.03s"><rect width="76" height="30" rx="15" fill="#FF2E45" fill-opacity=".10" stroke="#FF2E45" stroke-opacity=".40"/><circle cx="15" cy="15.0" r="3.2" fill="#FF6B7A"/><text class="mono ct" x="26" y="19">Figma</text></g></g>
+    <rect width="960" height="532" rx="18" fill="none" stroke="#3A1620" stroke-width="1.5"/>
   </g>
 </svg>

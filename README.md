@@ -240,6 +240,14 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
   <img src="assets/commit-arcade-light.svg" width="96%" alt="Tetris ve yükleme animasyonu"/>
 </picture>
 
+### 🌿 Git Flow &nbsp;·&nbsp; Bug Invaders
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/commit-arcade2-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="assets/commit-arcade2-light.svg"/>
+  <img src="assets/commit-arcade2-light.svg" width="96%" alt="Git branch/merge grafiği ve bug invaders animasyonu"/>
+</picture>
+
 ### 🐍 Snake
 
 <picture>
@@ -251,46 +259,42 @@ kaostan yapıya, düzenli adımlarla kod inşa ederiz.
 ### 👻 Pac-Man
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman.svg"/>
-  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman.svg" width="100%" alt="Pac-Man katkı grafiği"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman-contribution-graph-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman-contribution-graph.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/pacman-contribution-graph.svg" width="100%" alt="Pac-Man katkı grafiği"/>
 </picture>
 
 ### 🧱 Breakout
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout.svg"/>
-  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout.svg" width="100%" alt="Breakout katkı grafiği"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout-contribution-graph-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout-contribution-graph.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/breakout-contribution-graph.svg" width="100%" alt="Breakout katkı grafiği"/>
 </picture>
 
 ### 💣 Bomberman
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman.svg"/>
-  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman.svg" width="100%" alt="Bomberman katkı grafiği"/>
-</picture>
-
-### 💥 Minesweeper
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/minesweeper-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/minesweeper.svg"/>
-  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/minesweeper.svg" width="100%" alt="Minesweeper katkı grafiği"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman-contribution-graph-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman-contribution-graph.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/bomberman-contribution-graph.svg" width="100%" alt="Bomberman katkı grafiği"/>
 </picture>
 
 ### 🫧 Puzzle Bobble
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble-dark.svg"/>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble.svg"/>
-  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble.svg" width="100%" alt="Puzzle Bobble katkı grafiği"/>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble-contribution-graph-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble-contribution-graph.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/puzzle-bobble-contribution-graph.svg" width="100%" alt="Puzzle Bobble katkı grafiği"/>
 </picture>
 
 ### 🚀 Galaga
 
-<img src="https://raw.githubusercontent.com/OFThub/OFThub/output/galaga.svg" width="100%" alt="Galaga katkı grafiği"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/galaga-contribution-graph-dark.svg"/>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/OFThub/OFThub/output/galaga-contribution-graph.svg"/>
+  <img src="https://raw.githubusercontent.com/OFThub/OFThub/output/galaga-contribution-graph.svg" width="100%" alt="Galaga katkı grafiği"/>
+</picture>
 
 ### 🧊 İzometrik 3D Katkı Grafiği
 
